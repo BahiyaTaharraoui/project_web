@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="././kg_artifacts/ontology.owl"
+         xmlns="././kg_artifacts/ontology.owl#"
+         xmlns:swrl="http://www.w3.org/2003/11/swrl#">
+
+<owl:Ontology rdf:about="././kg_artifacts/ontology.owl"/>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+  <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Organization"/>
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Place"/>
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Person"/>
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Organization"/>
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Person"/>
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Place"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://myolympicgraph.org/ontology/mentionedIn">
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Place"/>
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Organization"/>
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Person"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://myolympicgraph.org/ontology/locatedIn">
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Organization"/>
+  <rdfs:range rdf:resource="http://myolympicgraph.org/ontology/Place"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://myolympicgraph.org/ontology/memberOf">
+  <rdfs:domain rdf:resource="http://myolympicgraph.org/ontology/Person"/>
+  <rdfs:range rdf:resource="http://myolympicgraph.org/ontology/Organization"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#memberOf"/>
+
+<owl:ObjectProperty rdf:about="#locatedIn"/>
+
+<owl:Class rdf:about="http://www.w3.org/2002/07/owl#Class">
+  <rdfs:label xml:lang="en">Class</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+  <rdfs:label xml:lang="en">ObjectProperty</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
+  <rdfs:label xml:lang="en">DatatypeProperty</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+  <rdfs:label xml:lang="en">Class</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://myolympicgraph.org/ontology/Organization">
+  <rdfs:label xml:lang="en">Organization</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://myolympicgraph.org/ontology/Place">
+  <rdfs:label xml:lang="en">Place</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="http://myolympicgraph.org/ontology/Person">
+  <rdfs:label xml:lang="en">Person</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Person">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Organization">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Place">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#VIP_Entity">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<swrl:Variable rdf:about="urn:swrl#p"/>
+
+<swrl:Variable rdf:about="urn:swrl#o"/>
+
+<swrl:Variable rdf:about="urn:swrl#l"/>
+
+<swrl:Imp>
+  <swrl:body>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#Person"/>
+          <swrl:argument1 rdf:resource="urn:swrl#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <rdf:Description>
+          <rdf:first>
+            <swrl:IndividualPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#memberOf"/>
+              <swrl:argument1 rdf:resource="urn:swrl#p"/>
+              <swrl:argument2 rdf:resource="urn:swrl#o"/>
+            </swrl:IndividualPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <rdf:Description>
+              <rdf:first>
+                <swrl:ClassAtom>
+                  <swrl:classPredicate rdf:resource="#Organization"/>
+                  <swrl:argument1 rdf:resource="urn:swrl#o"/>
+                </swrl:ClassAtom>
+              </rdf:first>
+              <rdf:rest>
+                <rdf:Description>
+                  <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                      <swrl:propertyPredicate rdf:resource="#locatedIn"/>
+                      <swrl:argument1 rdf:resource="urn:swrl#o"/>
+                      <swrl:argument2 rdf:resource="urn:swrl#l"/>
+                    </swrl:IndividualPropertyAtom>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </rdf:Description>
+              </rdf:rest>
+            </rdf:Description>
+          </rdf:rest>
+        </rdf:Description>
+      </rdf:rest>
+    </rdf:Description>
+  </swrl:body>
+  <swrl:head>
+    <rdf:Description>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#VIP_Entity"/>
+          <swrl:argument1 rdf:resource="urn:swrl#p"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+  </swrl:head>
+</swrl:Imp>
+
+
+</rdf:RDF>

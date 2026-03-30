@@ -1,0 +1,1951 @@
+@prefix ex: <http://myolympicgraph.org/resource/> .
+@prefix ont: <http://myolympicgraph.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:Organization a rdfs:Class,
+        owl:Class ;
+    rdfs:comment "A committee, federation, club or institution"@en ;
+    rdfs:subClassOf owl:Thing .
+
+ont:Person a rdfs:Class,
+        owl:Class ;
+    rdfs:comment "A human being mentioned in the Olympic context"@en ;
+    rdfs:subClassOf owl:Thing .
+
+ont:Place a rdfs:Class,
+        owl:Class ;
+    rdfs:comment "A geopolitical entity: city, country or region"@en ;
+    rdfs:subClassOf owl:Thing .
+
+ont:basedIn a owl:ObjectProperty ;
+    rdfs:label "based in"@en ;
+    rdfs:comment "A person is associated with a geopolitical location"@en ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Place .
+
+ont:locatedIn a owl:ObjectProperty ;
+    rdfs:label "located in"@en ;
+    rdfs:comment "An organization is located in a place"@en ;
+    rdfs:domain ont:Organization ;
+    rdfs:range ont:Place .
+
+ont:memberOf a owl:ObjectProperty ;
+    rdfs:label "member of"@en ;
+    rdfs:comment "A person is affiliated with an organization"@en ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Organization .
+
+ont:mentionedIn a owl:DatatypeProperty ;
+    rdfs:label "mentioned in"@en ;
+    rdfs:comment "Source Wikipedia page where the entity was extracted"@en .
+
+ex:Ahn_Hyunsoo a ont:Person ;
+    rdfs:label "Ahn Hyun-soo"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Alan a ont:Person ;
+    rdfs:label "Alan"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q294833 ;
+    skos:exactMatch wd:Q294833 .
+
+ex:Allison a ont:Person ;
+    rdfs:label "Allison"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q19819764 ;
+    skos:exactMatch wd:Q19819764 .
+
+ex:Anastasiia_Kirpichnikova a ont:Person ;
+    rdfs:label "Anastasiia Kirpichnikova"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Arash_Miresmaeili a ont:Person ;
+    rdfs:label "Arash Miresmaeili"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q336132 ;
+    skos:exactMatch wd:Q336132 .
+
+ex:Austria a ont:Place ;
+    rdfs:label "Austria"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q40 ;
+    skos:exactMatch wd:Q40 .
+
+ex:Ayelet a ont:Person ;
+    rdfs:label "Ayelet"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q87760484 ;
+    skos:exactMatch wd:Q87760484 .
+
+ex:Ben_Cocking a ont:Person ;
+    rdfs:label "Ben Cocking"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Winter_sports"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Winter_sports> .
+
+ex:Ben_Johnson a ont:Person ;
+    rdfs:label "Ben Johnson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q349166 ;
+    skos:exactMatch wd:Q349166 .
+
+ex:Canada_Newswire a ont:Organization ;
+    rdfs:label "Canada Newswire"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Charalambos a ont:Person ;
+    rdfs:label "Charalambos"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q20030238 ;
+    skos:exactMatch wd:Q20030238 .
+
+ex:China a ont:Place ;
+    rdfs:label "China"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q29520 ;
+    skos:exactMatch wd:Q29520 .
+
+ex:Claire a ont:Person ;
+    rdfs:label "Claire"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q1094751 ;
+    skos:exactMatch wd:Q1094751 .
+
+ex:Coroebus a ont:Person ;
+    rdfs:label "Coroebus"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q1784620 ;
+    skos:exactMatch wd:Q1784620 .
+
+ex:Cyrene a ont:Place ;
+    rdfs:label "Cyrene"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q107269060 ;
+    skos:exactMatch wd:Q107269060 .
+
+ex:Dade a ont:Person ;
+    rdfs:label "Dade"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q16869380 ;
+    skos:exactMatch wd:Q16869380 .
+
+ex:David_C a ont:Person ;
+    rdfs:label "David C."^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q114246865 ;
+    skos:exactMatch wd:Q114246865 .
+
+ex:David_Maraniss a ont:Person ;
+    rdfs:label "David Maraniss"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q5237116 ;
+    skos:exactMatch wd:Q5237116 .
+
+ex:Davies a ont:Person ;
+    rdfs:label "Davies"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q1177810 ;
+    skos:exactMatch wd:Q1177810 .
+
+ex:De_Nonno a ont:Person ;
+    rdfs:label "De Nonno"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q107619948 ;
+    skos:exactMatch wd:Q107619948 .
+
+ex:Delphi a ont:Place ;
+    rdfs:label "Delphi"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q4037189 ;
+    skos:exactMatch wd:Q4037189 .
+
+ex:Droit a ont:Person ;
+    rdfs:label "Droit"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q107429727 ;
+    skos:exactMatch wd:Q107429727 .
+
+ex:Dubai a ont:Place ;
+    rdfs:label "Dubai"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q612 ;
+    skos:exactMatch wd:Q612 .
+
+ex:Duke_Kahanamoku a ont:Person ;
+    rdfs:label "Duke Kahanamoku"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q123688 ;
+    skos:exactMatch wd:Q123688 .
+
+ex:Dunbar a ont:Person ;
+    rdfs:label "Dunbar"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q21452734 ;
+    skos:exactMatch wd:Q21452734 .
+
+ex:Early a ont:Person ;
+    rdfs:label "Early"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q16275607 ;
+    skos:exactMatch wd:Q16275607 .
+
+ex:Elena_Votsi46 a ont:Person ;
+    rdfs:label "Elena Votsi.[46"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:England a ont:Place ;
+    rdfs:label "England"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q21 ;
+    skos:exactMatch wd:Q21 .
+
+ex:Eratosthenes a ont:Person ;
+    rdfs:label "Eratosthenes"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q43182 ;
+    skos:exactMatch wd:Q43182 .
+
+ex:Feargus a ont:Person ;
+    rdfs:label "Feargus"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q21396519 ;
+    skos:exactMatch wd:Q21396519 .
+
+ex:Fernando_Martín_Vicente a ont:Person ;
+    rdfs:label "Fernando Martín Vicente"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Finkelstein a ont:Person ;
+    rdfs:label "Finkelstein"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q25311288 ;
+    skos:exactMatch wd:Q25311288 .
+
+ex:Flatter a ont:Person ;
+    rdfs:label "Flatter"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> ;
+    owl:sameAs wd:Q36987127 ;
+    skos:exactMatch wd:Q36987127 .
+
+ex:Franco a ont:Person ;
+    rdfs:label "Franco"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q15303969 ;
+    skos:exactMatch wd:Q15303969 .
+
+ex:Frank a ont:Person ;
+    rdfs:label "Frank"^^xsd:string ;
+    ont:memberOf ex:AMS,
+        ex:International_Federations,
+        ex:International_Sports_Federations,
+        ex:Moscow_Times,
+        ex:SLOC,
+        ex:University_of_British_Columbia,
+        ex:Walla_Walla_Press,
+        ex:World_AntiDoping_Agency,
+        ex:a_Paralympic_Sport,
+        ex:the_International_Olympic_Committee ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q220546 ;
+    skos:exactMatch wd:Q220546 .
+
+ex:Galen a ont:Person ;
+    rdfs:label "Galen"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q56291953 ;
+    skos:exactMatch wd:Q56291953 .
+
+ex:George_Eyser a ont:Person ;
+    rdfs:label "George Eyser"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q556883 ;
+    skos:exactMatch wd:Q556883 .
+
+ex:Gibson a ont:Person ;
+    rdfs:label "Gibson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q2700390 ;
+    skos:exactMatch wd:Q2700390 .
+
+ex:Glenn_Ikonen a ont:Person ;
+    rdfs:label "Glenn Ikonen"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q4567409 ;
+    skos:exactMatch wd:Q4567409 .
+
+ex:Goggin a ont:Person ;
+    rdfs:label "Goggin"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q21493824 ;
+    skos:exactMatch wd:Q21493824 .
+
+ex:Gray_Johnson a ont:Person ;
+    rdfs:label "Gray Johnson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q6745108 ;
+    skos:exactMatch wd:Q6745108 .
+
+ex:Gregor_Robertson a ont:Person ;
+    rdfs:label "Gregor Robertson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q1391375 ;
+    skos:exactMatch wd:Q1391375 .
+
+ex:HA_Ormerod a ont:Person ;
+    rdfs:label "H.A. Ormerod"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:HW_Pleket a ont:Person ;
+    rdfs:label "H.W. Pleket"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Henry_George a ont:Person ;
+    rdfs:label "Henry George"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q355245 ;
+    skos:exactMatch wd:Q355245 .
+
+ex:Hildesheim a ont:Place ;
+    rdfs:label "Hildesheim"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q3185 ;
+    skos:exactMatch wd:Q3185 .
+
+ex:Hornblower a ont:Person ;
+    rdfs:label "Hornblower"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q735749 ;
+    skos:exactMatch wd:Q735749 .
+
+ex:Iasius a ont:Person ;
+    rdfs:label "Iasius"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q106803870 ;
+    skos:exactMatch wd:Q106803870 .
+
+ex:Ibolya_Csák30 a ont:Person ;
+    rdfs:label "Ibolya Csák.[30"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:memberOf ex:Administrative_Science_Quarterly,
+        ex:Agence_FrancePresse,
+        ex:American_Review_of_Canadian_Studies,
+        ex:Charles_Beck,
+        ex:Cork_University_Press,
+        ex:Deseret_News_Archives,
+        ex:Guided_History,
+        ex:HOC,
+        ex:Harvard_University_Press,
+        ex:IPC,
+        ex:International_Paralympic_Committee,
+        ex:LOCOG,
+        ex:L_Larose,
+        ex:NBC_Sports,
+        ex:NYPD,
+        ex:Newsweek,
+        ex:Olympic_Primer,
+        ex:Pluto_Press,
+        ex:Routledge_Taylor__Francis_Group,
+        ex:Simon__Schuster,
+        ex:The_New_York_Times,
+        ex:The_San_Francisco_Chronicle,
+        ex:USA_TODAY,
+        ex:University_of_Texas_Press,
+        ex:Université_de_Paris_IV__Sorbonne,
+        ex:Vallardi__Associati,
+        ex:the_British_Olympic_Association,
+        ex:the_Institute_for_Physical_Culture,
+        ex:the_International_Federation_of_Association_Football,
+        ex:the_International_Paralympic_Committee ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Iran a ont:Place ;
+    rdfs:label "Iran"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q794 ;
+    skos:exactMatch wd:Q794 .
+
+ex:Irena a ont:Person ;
+    rdfs:label "Irena"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Winter_sports"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Winter_sports> ;
+    owl:sameAs wd:Q11977502 ;
+    skos:exactMatch wd:Q11977502 .
+
+ex:Jason a ont:Person ;
+    rdfs:label "Jason"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q2630093 ;
+    skos:exactMatch wd:Q2630093 .
+
+ex:Jennings a ont:Person ;
+    rdfs:label "Jennings"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q21488855 ;
+    skos:exactMatch wd:Q21488855 .
+
+ex:Jim_Thorpe a ont:Person ;
+    rdfs:label "Jim Thorpe"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> ;
+    owl:sameAs wd:Q112876002 ;
+    skos:exactMatch wd:Q112876002 .
+
+ex:John_E_Findling a ont:Person ;
+    rdfs:label "John E. Findling"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q112391164 ;
+    skos:exactMatch wd:Q112391164 .
+
+ex:Jordan a ont:Person ;
+    rdfs:label "Jordan"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q14021944 ;
+    skos:exactMatch wd:Q14021944 .
+
+ex:Kirsty_Coventry a ont:Person ;
+    rdfs:label "Kirsty Coventry"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q274009 ;
+    skos:exactMatch wd:Q274009 .
+
+ex:Kostis_Palamas a ont:Person ;
+    rdfs:label "Kostis Palamas"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q317967 ;
+    skos:exactMatch wd:Q317967 .
+
+ex:Lei a ont:Person ;
+    rdfs:label "Lei"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> ;
+    owl:sameAs wd:Q2028062 ;
+    skos:exactMatch wd:Q2028062 .
+
+ex:Leonidas a ont:Person ;
+    rdfs:label "Leonidas"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Internet_Archive ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q20001911 ;
+    skos:exactMatch wd:Q20001911 .
+
+ex:Lewis a ont:Person ;
+    rdfs:label "Lewis"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q426463 ;
+    skos:exactMatch wd:Q426463 .
+
+ex:Liam_Llewellyn a ont:Person ;
+    rdfs:label "Liam Llewellyn"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Lori a ont:Person ;
+    rdfs:label "Lori"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q1870304 ;
+    skos:exactMatch wd:Q1870304 .
+
+ex:Ludwig_Guttmann a ont:Person ;
+    rdfs:label "Ludwig Guttmann"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q76912 ;
+    skos:exactMatch wd:Q76912 .
+
+ex:MacIntosh a ont:Person ;
+    rdfs:label "MacIntosh"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q28339766 ;
+    skos:exactMatch wd:Q28339766 .
+
+ex:Maffly a ont:Person ;
+    rdfs:label "Maffly"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Marcell_Jacobs a ont:Person ;
+    rdfs:label "Marcell Jacobs"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> ;
+    owl:sameAs wd:Q25366209 ;
+    skos:exactMatch wd:Q25366209 .
+
+ex:Michael_Kamen a ont:Person ;
+    rdfs:label "Michael Kamen"^^xsd:string ;
+    ont:memberOf ex:AWDC,
+        ex:Antwerp_World_Diamond_Centre,
+        ex:Coubertin,
+        ex:Independent,
+        ex:The_International_Olympic_Committee,
+        ex:the_Olympic_Museum ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q156300 ;
+    skos:exactMatch wd:Q156300 .
+
+ex:Michaelis a ont:Person ;
+    rdfs:label "Michaelis"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q21450401 ;
+    skos:exactMatch wd:Q21450401 .
+
+ex:Millender a ont:Person ;
+    rdfs:label "Millender"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q6858746 ;
+    skos:exactMatch wd:Q6858746 .
+
+ex:Minneapolis a ont:Place ;
+    rdfs:label "Minneapolis"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q36091 ;
+    skos:exactMatch wd:Q36091 .
+
+ex:Minnesota a ont:Place ;
+    rdfs:label "Minnesota"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q1527 ;
+    skos:exactMatch wd:Q1527 .
+
+ex:Montgomery a ont:Person ;
+    rdfs:label "Montgomery"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> ;
+    owl:sameAs wd:Q29364 ;
+    skos:exactMatch wd:Q29364 .
+
+ex:Morse a ont:Person ;
+    rdfs:label "Morse"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q13571164 ;
+    skos:exactMatch wd:Q13571164 .
+
+ex:Much_Wenlock a ont:Place ;
+    rdfs:label "Much Wenlock"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q201114 ;
+    skos:exactMatch wd:Q201114 .
+
+ex:Murray a ont:Person ;
+    rdfs:label "Murray"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q1308329 ;
+    skos:exactMatch wd:Q1308329 .
+
+ex:Nagano a ont:Place ;
+    rdfs:label "Nagano"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q128849 ;
+    skos:exactMatch wd:Q128849 .
+
+ex:Nelsen a ont:Person ;
+    rdfs:label "Nelsen"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q56243872 ;
+    skos:exactMatch wd:Q56243872 .
+
+ex:New_Zealand a ont:Place ;
+    rdfs:label "New Zealand"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q664 ;
+    skos:exactMatch wd:Q664 .
+
+ex:Newell a ont:Person ;
+    rdfs:label "Newell"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q16878034 ;
+    skos:exactMatch wd:Q16878034 .
+
+ex:Nicholas_J_Richardson a ont:Person ;
+    rdfs:label "Nicholas J. Richardson"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Nick a ont:Person ;
+    rdfs:label "Nick"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q13137230 ;
+    skos:exactMatch wd:Q13137230 .
+
+ex:Nike a ont:Person ;
+    rdfs:label "Nike"^^xsd:string ;
+    ont:memberOf ex:AWDC,
+        ex:Antwerp_World_Diamond_Centre,
+        ex:Bulletin_du_Comité_International_Olympique,
+        ex:Congress,
+        ex:Coubertin,
+        ex:Independent,
+        ex:The_International_Olympic_Committee,
+        ex:the_Olympic_Museum ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q483915 ;
+    skos:exactMatch wd:Q483915 .
+
+ex:Nima a ont:Person ;
+    rdfs:label "Nima"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q465164 ;
+    skos:exactMatch wd:Q465164 .
+
+ex:OSullivan a ont:Person ;
+    rdfs:label "O'Sullivan"^^xsd:string ;
+    ont:memberOf ex:AWDC,
+        ex:Antwerp_World_Diamond_Centre,
+        ex:Bulletin_du_Comité_International_Olympique,
+        ex:Congress,
+        ex:Coubertin,
+        ex:Independent,
+        ex:The_International_Olympic_Committee,
+        ex:the_Olympic_Museum ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q21449778 ;
+    skos:exactMatch wd:Q21449778 .
+
+ex:Olympic_Review a ont:Organization ;
+    rdfs:label "Olympic Review"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q31078031 ;
+    skos:exactMatch wd:Q31078031 .
+
+ex:Oxford a ont:Place ;
+    rdfs:label "Oxford"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q34217 ;
+    skos:exactMatch wd:Q34217 .
+
+ex:P_David a ont:Person ;
+    rdfs:label "P. David"^^xsd:string ;
+    ont:memberOf ex:AMS,
+        ex:International_Federations,
+        ex:International_Sports_Federations,
+        ex:Moscow_Times,
+        ex:SLOC,
+        ex:University_of_British_Columbia,
+        ex:Walla_Walla_Press,
+        ex:World_AntiDoping_Agency,
+        ex:a_Paralympic_Sport,
+        ex:the_International_Olympic_Committee ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q102368500 ;
+    skos:exactMatch wd:Q102368500 .
+
+ex:Pele a ont:Person ;
+    rdfs:label "Pele"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q37442990 ;
+    skos:exactMatch wd:Q37442990 .
+
+ex:Pelops a ont:Person ;
+    rdfs:label "Pelops"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q192485 ;
+    skos:exactMatch wd:Q192485 .
+
+ex:Perseus_Hopper a ont:Person ;
+    rdfs:label "Perseus Hopper"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Pierre_de_Coubertin8 a ont:Person ;
+    rdfs:label "Pierre de Coubertin[8"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Pisa a ont:Place ;
+    rdfs:label "Pisa"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q13375 ;
+    skos:exactMatch wd:Q13375 .
+
+ex:Preuss a ont:Person ;
+    rdfs:label "Preuss"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q60156062 ;
+    skos:exactMatch wd:Q60156062 .
+
+ex:Pyeongchang a ont:Place ;
+    rdfs:label "Pyeongchang"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q624999 ;
+    skos:exactMatch wd:Q624999 .
+
+ex:Random_House a ont:Organization ;
+    rdfs:label "Random House"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q744182 ;
+    skos:exactMatch wd:Q744182 .
+
+ex:Randy_Edelman a ont:Person ;
+    rdfs:label "Randy Edelman"^^xsd:string ;
+    ont:memberOf ex:AWDC,
+        ex:Antwerp_World_Diamond_Centre,
+        ex:Bulletin_du_Comité_International_Olympique,
+        ex:Congress,
+        ex:Coubertin,
+        ex:Independent,
+        ex:The_International_Olympic_Committee,
+        ex:the_Olympic_Museum ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q954231 ;
+    skos:exactMatch wd:Q954231 .
+
+ex:Rebecca_Williams a ont:Person ;
+    rdfs:label "Rebecca Williams"^^xsd:string ;
+    ont:memberOf ex:AMS,
+        ex:International_Federations,
+        ex:International_Sports_Federations,
+        ex:Moscow_Times,
+        ex:SLOC,
+        ex:University_of_British_Columbia,
+        ex:Walla_Walla_Press,
+        ex:World_AntiDoping_Agency,
+        ex:a_Paralympic_Sport,
+        ex:the_International_Olympic_Committee ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q112563296 ;
+    skos:exactMatch wd:Q112563296 .
+
+ex:Rice a ont:Person ;
+    rdfs:label "Rice"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q13557324 ;
+    skos:exactMatch wd:Q13557324 .
+
+ex:Ricky_Williams a ont:Person ;
+    rdfs:label "Ricky Williams"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> ;
+    owl:sameAs wd:Q108052880 ;
+    skos:exactMatch wd:Q108052880 .
+
+ex:Riding a ont:Person ;
+    rdfs:label "Riding"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q16802363 ;
+    skos:exactMatch wd:Q16802363 .
+
+ex:Rio a ont:Place ;
+    rdfs:label "Rio"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q37473005 ;
+    skos:exactMatch wd:Q37473005 .
+
+ex:Robert_Dover a ont:Person ;
+    rdfs:label "Robert Dover"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q1689656 ;
+    skos:exactMatch wd:Q1689656 .
+
+ex:Robina_Muqimyar a ont:Person ;
+    rdfs:label "Robina Muqimyar"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q467296 ;
+    skos:exactMatch wd:Q467296 .
+
+ex:Roche a ont:Person ;
+    rdfs:label "Roche"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q2160221 ;
+    skos:exactMatch wd:Q2160221 .
+
+ex:Rogge a ont:Person ;
+    rdfs:label "Rogge"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q29613961 ;
+    skos:exactMatch wd:Q29613961 .
+
+ex:Romania a ont:Place ;
+    rdfs:label "Romania"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q218 ;
+    skos:exactMatch wd:Q218 .
+
+ex:Rowlatt a ont:Person ;
+    rdfs:label "Rowlatt"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q96478603 ;
+    skos:exactMatch wd:Q96478603 .
+
+ex:Salt_Lake_City a ont:Place ;
+    rdfs:label "Salt Lake City"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q23337 ;
+    skos:exactMatch wd:Q23337 .
+
+ex:Sandomir a ont:Person ;
+    rdfs:label "Sandomir"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q63882630 ;
+    skos:exactMatch wd:Q63882630 .
+
+ex:Schantz a ont:Person ;
+    rdfs:label "Schantz"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q40206701 ;
+    skos:exactMatch wd:Q40206701 .
+
+ex:Scott a ont:Person ;
+    rdfs:label "Scott"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q2260734 ;
+    skos:exactMatch wd:Q2260734 .
+
+ex:Simone_McCarthy a ont:Person ;
+    rdfs:label "Simone McCarthy"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q88460530 ;
+    skos:exactMatch wd:Q88460530 .
+
+ex:Singapore a ont:Place ;
+    rdfs:label "Singapore"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q334 ;
+    skos:exactMatch wd:Q334 .
+
+ex:Sochi a ont:Place ;
+    rdfs:label "Sochi"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q39420 ;
+    skos:exactMatch wd:Q39420 .
+
+ex:South_Korea a ont:Place ;
+    rdfs:label "South Korea"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q884 ;
+    skos:exactMatch wd:Q884 .
+
+ex:Theodosius a ont:Person ;
+    rdfs:label "Theodosius"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q1174712 ;
+    skos:exactMatch wd:Q1174712 .
+
+ex:Tiberius a ont:Person ;
+    rdfs:label "Tiberius"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q21485162 ;
+    skos:exactMatch wd:Q21485162 .
+
+ex:Trevor a ont:Person ;
+    rdfs:label "Trevor"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q19800846 ;
+    skos:exactMatch wd:Q19800846 .
+
+ex:Trischa_ZornHudson a ont:Person ;
+    rdfs:label "Trischa Zorn-Hudson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q1757800 ;
+    skos:exactMatch wd:Q1757800 .
+
+ex:Vladimir_Putin a ont:Person ;
+    rdfs:label "Vladimir Putin"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q7747 ;
+    skos:exactMatch wd:Q7747 .
+
+ex:Wendy_J_Raschke a ont:Person ;
+    rdfs:label "Wendy J. Raschke"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Whannel a ont:Person ;
+    rdfs:label "Whannel"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q105282384 ;
+    skos:exactMatch wd:Q105282384 .
+
+ex:Wikipedia a ont:Organization ;
+    rdfs:label "Wikipedia"^^xsd:string ;
+    ont:locatedIn ex:Zurich ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/World_championship"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/World_championship> ;
+    owl:sameAs wd:Q52 ;
+    skos:exactMatch wd:Q52 .
+
+ex:William_K a ont:Person ;
+    rdfs:label "William K."^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q64864533 ;
+    skos:exactMatch wd:Q64864533 .
+
+ex:Winnipeg a ont:Place ;
+    rdfs:label "Winnipeg"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q2135 ;
+    skos:exactMatch wd:Q2135 .
+
+ex:Young a ont:Person ;
+    rdfs:label "Young"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q12678727 ;
+    skos:exactMatch wd:Q12678727 .
+
+ex:Zemlianichenko a ont:Person ;
+    rdfs:label "Zemlianichenko"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:_Pierre_de_Coubertin a ont:Person ;
+    rdfs:label "| Pierre de Coubertin"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Person, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:bin_Laden a ont:Person ;
+    rdfs:label "bin Laden"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q4913781 ;
+    skos:exactMatch wd:Q4913781 .
+
+ex:the_International_Society_of_Olympic_Historians a ont:Organization ;
+    rdfs:label "the International Society of Olympic Historians"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_UEFA_Champions_League a ont:Organization ;
+    rdfs:label "the UEFA Champions League"^^xsd:string ;
+    ont:locatedIn ex:Zurich ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/World_championship"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/World_championship> ;
+    owl:sameAs wd:Q57556787 ;
+    skos:exactMatch wd:Q57556787 .
+
+ex:the_United_States139140141142143 a ont:Place ;
+    rdfs:label "the United States.[139][140][141][142][143"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Place, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Čáslavská a ont:Person ;
+    rdfs:label "Čáslavská"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q45023080 ;
+    skos:exactMatch wd:Q45023080 .
+
+ex:Administrative_Science_Quarterly a ont:Organization ;
+    rdfs:label "Administrative Science Quarterly"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q124516016 ;
+    skos:exactMatch wd:Q124516016 .
+
+ex:Agence_FrancePresse a ont:Organization ;
+    rdfs:label "Agence France-Presse"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q40464 ;
+    skos:exactMatch wd:Q40464 .
+
+ex:American_Review_of_Canadian_Studies a ont:Organization ;
+    rdfs:label "American Review of Canadian Studies"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q15750863 ;
+    skos:exactMatch wd:Q15750863 .
+
+ex:Charles_Beck a ont:Organization ;
+    rdfs:label "Charles Beck"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q4175194 ;
+    skos:exactMatch wd:Q4175194 .
+
+ex:Cork_University_Press a ont:Organization ;
+    rdfs:label "Cork University Press"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q5170827 ;
+    skos:exactMatch wd:Q5170827 .
+
+ex:Deseret_News_Archives a ont:Organization ;
+    rdfs:label "Deseret News Archives"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Guided_History a ont:Organization ;
+    rdfs:label "Guided History"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:HOC a ont:Organization ;
+    rdfs:label "HOC"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q41466 ;
+    skos:exactMatch wd:Q41466 .
+
+ex:Harvard_University_Press a ont:Organization ;
+    rdfs:label "Harvard University Press"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q1587900 ;
+    skos:exactMatch wd:Q1587900 .
+
+ex:IPC a ont:Organization ;
+    rdfs:label "IPC"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:International_Paralympic_Committee a ont:Organization ;
+    rdfs:label "International Paralympic Committee"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q175386 ;
+    skos:exactMatch wd:Q175386 .
+
+ex:LOCOG a ont:Organization ;
+    rdfs:label "LOCOG"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q110209573 ;
+    skos:exactMatch wd:Q110209573 .
+
+ex:L_Larose a ont:Organization ;
+    rdfs:label "L. Larose"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q64212492 ;
+    skos:exactMatch wd:Q64212492 .
+
+ex:NBC_Sports a ont:Organization ;
+    rdfs:label "NBC Sports"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q3046048 ;
+    skos:exactMatch wd:Q3046048 .
+
+ex:NYPD a ont:Organization ;
+    rdfs:label "NYPD"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q609274 ;
+    skos:exactMatch wd:Q609274 .
+
+ex:Newsweek a ont:Organization ;
+    rdfs:label "Newsweek"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q188413 ;
+    skos:exactMatch wd:Q188413 .
+
+ex:Olympic_Primer a ont:Organization ;
+    rdfs:label "Olympic Primer"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Pluto_Press a ont:Organization ;
+    rdfs:label "Pluto Press"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q17017872 ;
+    skos:exactMatch wd:Q17017872 .
+
+ex:Routledge_Taylor__Francis_Group a ont:Organization ;
+    rdfs:label "Routledge, Taylor & Francis Group"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Simon__Schuster a ont:Organization ;
+    rdfs:label "Simon & Schuster"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q1756332 ;
+    skos:exactMatch wd:Q1756332 .
+
+ex:The_New_York_Times a ont:Organization ;
+    rdfs:label "The New York Times"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q9684 ;
+    skos:exactMatch wd:Q9684 .
+
+ex:The_San_Francisco_Chronicle a ont:Organization ;
+    rdfs:label "The San Francisco Chronicle"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q139103 ;
+    skos:exactMatch wd:Q139103 .
+
+ex:USA_TODAY a ont:Organization ;
+    rdfs:label "USA TODAY"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q39681 ;
+    skos:exactMatch wd:Q39681 .
+
+ex:University_of_Texas_Press a ont:Organization ;
+    rdfs:label "University of Texas Press"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q4005866 ;
+    skos:exactMatch wd:Q4005866 .
+
+ex:Université_de_Paris_IV__Sorbonne a ont:Organization ;
+    rdfs:label "Université de Paris IV – Sorbonne"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Vallardi__Associati a ont:Organization ;
+    rdfs:label "Vallardi & Associati"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_British_Olympic_Association a ont:Organization ;
+    rdfs:label "the British Olympic Association"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q73551741 ;
+    skos:exactMatch wd:Q73551741 .
+
+ex:the_Institute_for_Physical_Culture a ont:Organization ;
+    rdfs:label "the Institute for Physical Culture"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_International_Federation_of_Association_Football a ont:Organization ;
+    rdfs:label "the International Federation of Association Football"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_International_Paralympic_Committee a ont:Organization ;
+    rdfs:label "the International Paralympic Committee"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> ;
+    owl:sameAs wd:Q57636060 ;
+    skos:exactMatch wd:Q57636060 .
+
+ex:Zurich a ont:Place ;
+    rdfs:label "Zurich"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/World_championship"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/World_championship> ;
+    owl:sameAs wd:Q72 ;
+    skos:exactMatch wd:Q72 .
+
+wd:Q102368500 rdfs:label "P. David Stotts, Jr."@en ;
+    rdfs:comment "Ph.D. University of Virginia 1985"@en .
+
+wd:Q105282384 rdfs:label "Whannel"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q106803870 rdfs:label "Iasius"@en ;
+    rdfs:comment "one of the Dactyls (demi-gods from Mt. Ida in Crete)"@en .
+
+wd:Q107269060 rdfs:label "Cyrene"@en ;
+    rdfs:comment "genus of fishes"@en .
+
+wd:Q107429727 rdfs:label "Droit"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q107619948 rdfs:label "De Nonno"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q108052880 rdfs:label "Ricky Williams"@en ;
+    rdfs:comment "football player (born 1960)"@en .
+
+wd:Q1094751 rdfs:label "Claire"@en ;
+    rdfs:comment "female given name"@en .
+
+wd:Q110209573 rdfs:label "Locoge"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q112391164 rdfs:label "John E. Findling"@en .
+
+wd:Q112563296 rdfs:label "Rebecca Williams"@en .
+
+wd:Q112876002 rdfs:label "Jim Thorpe"@en ;
+    rdfs:comment "English snooker referee (1933-2010)"@en .
+
+wd:Q114246865 rdfs:label "David C. Rahm"@en ;
+    rdfs:comment "particle physicist at BNL"@en .
+
+wd:Q1174712 rdfs:label "Theodosius"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q1177810 rdfs:label "Davies"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q11977502 rdfs:label "Irena"@en ;
+    rdfs:comment "female given name"@en .
+
+wd:Q1202611 rdfs:label "The Moscow Times"@en ;
+    rdfs:comment "independent bilingual newspaper"@en .
+
+wd:Q123688 rdfs:label "Duke Kahanamoku"@en ;
+    rdfs:comment "American swimmer, surfer and actor (1890-1968)"@en .
+
+wd:Q124516016 rdfs:label "Administrative Science Quarterly"@en ;
+    rdfs:comment "organization"@en .
+
+wd:Q12678727 rdfs:label "Young"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q128849 rdfs:label "Nagano"@en ;
+    rdfs:comment "city in Nagano Prefecture, Japan"@en .
+
+wd:Q1308329 rdfs:label "Murray"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q13137230 rdfs:label "Nick"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q13375 rdfs:label "Pisa"@en ;
+    rdfs:comment "city in Tuscany, Central Italy"@en .
+
+wd:Q13557324 rdfs:label "Rice"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q13571164 rdfs:label "Morse"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q139103 rdfs:label "San Francisco Chronicle"@en ;
+    rdfs:comment "newspaper serving the San Francisco Bay area"@en .
+
+wd:Q1391375 rdfs:label "Gregor Robertson"@en ;
+    rdfs:comment "Canadian politician"@en .
+
+wd:Q14021944 rdfs:label "Jordan"@en ;
+    rdfs:comment "unisex given name"@en .
+
+wd:Q1527 rdfs:label "Minnesota"@en ;
+    rdfs:comment "state of the United States of America"@en .
+
+wd:Q15303969 rdfs:label "Franco"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q156300 rdfs:label "Michael Kamen"@en ;
+    rdfs:comment "American composer (1948–2003)"@en .
+
+wd:Q15750863 rdfs:label "American Review of Canadian Studies"@en ;
+    rdfs:comment "journal"@en .
+
+wd:Q1587900 rdfs:label "Harvard University Press"@en ;
+    rdfs:comment "American university publishing house"@en .
+
+wd:Q16275607 rdfs:label "Early"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q16802363 rdfs:label "Riding"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q16869380 rdfs:label "Dade"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q16878034 rdfs:label "Newell"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q1689656 rdfs:label "Robert Dover"@en ;
+    rdfs:comment "equestrian"@en .
+
+wd:Q17003905 rdfs:label "Antwerp World Diamond Centre"@en ;
+    rdfs:comment "Dutch corporation"@en .
+
+wd:Q17017872 rdfs:label "Pluto Press"@en ;
+    rdfs:comment "British independent book publishing house"@en .
+
+wd:Q175386 rdfs:label "International Paralympic Committee"@en ;
+    rdfs:comment "Global governing body for the Paralympic Movement"@en .
+
+wd:Q1756332 rdfs:label "Simon & Schuster"@en ;
+    rdfs:comment "American publishing company"@en .
+
+wd:Q1757800 rdfs:label "Trischa Zorn"@en ;
+    rdfs:comment "American Paralympic swimmer"@en .
+
+wd:Q1784620 rdfs:label "Coroebus"@en ;
+    rdfs:comment "mythological son of Mygdon"@en .
+
+wd:Q1870304 rdfs:label "Lori"@en ;
+    rdfs:comment "female given name"@en .
+
+wd:Q188413 rdfs:label "Newsweek"@en ;
+    rdfs:comment "weekly magazine based in New York City"@en .
+
+wd:Q192485 rdfs:label "Pelops"@en ;
+    rdfs:comment "son of Tantalus in Greek mythology, king of Pisa in the Peloponnesus region"@en .
+
+wd:Q19800846 rdfs:label "Trevor"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q19819764 rdfs:label "Allison"@en ;
+    rdfs:comment "unisex given name"@en .
+
+wd:Q20001911 rdfs:label "Leonidas"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q20030238 rdfs:label "Charalambos"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q201114 rdfs:label "Much Wenlock"@en ;
+    rdfs:comment "town and civil parish in Shropshire, England"@en .
+
+wd:Q2028062 rdfs:label "Lei"@en ;
+    rdfs:comment "female given name"@en .
+
+wd:Q206033 rdfs:label "Google Books"@en ;
+    rdfs:comment "search engine for books by Google"@en .
+
+wd:Q21 rdfs:label "England"@en ;
+    rdfs:comment "country in north-west Europe, part of the United Kingdom"@en .
+
+wd:Q2135 rdfs:label "Winnipeg"@en ;
+    rdfs:comment "capital and largest city of the province of Manitoba, Canada"@en .
+
+wd:Q21396519 rdfs:label "Feargus"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q21449778 rdfs:label "O'Sullivan"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q21450401 rdfs:label "Michaelis"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q21452734 rdfs:label "Dunbar"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q21485162 rdfs:label "Tiberius"@en ;
+    rdfs:comment "ancient Roman praenomen"@en .
+
+wd:Q21488855 rdfs:label "Jennings"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q21493824 rdfs:label "Goggin"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q2160221 rdfs:label "Roche"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q218 rdfs:label "Romania"@en ;
+    rdfs:comment "country in Southeast Europe"@en .
+
+wd:Q220546 rdfs:label "Frank"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q2260734 rdfs:label "Scott"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q23337 rdfs:label "Salt Lake City"@en ;
+    rdfs:comment "city in and county seat of Salt Lake County, Utah, United States and the capital of Utah"@en .
+
+wd:Q2495862 rdfs:label "congress"@en ;
+    rdfs:comment "formal meeting of representatives of different countries, states, organizations, etc."@en .
+
+wd:Q25311288 rdfs:label "Finkelstein"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q25366209 rdfs:label "Marcell Jacobs"@en ;
+    rdfs:comment "Italian athlete"@en .
+
+wd:Q2630093 rdfs:label "Jason"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q2700390 rdfs:label "Gibson"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q274009 rdfs:label "Kirsty Coventry"@en ;
+    rdfs:comment "Zimbabwean swimmer, politician, and sports administrator"@en .
+
+wd:Q28339766 rdfs:label "MacIntosh"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q29364 rdfs:label "Montgomery"@en ;
+    rdfs:comment "city in and county seat of Montgomery County, and capital of the State of Alabama, United States"@en .
+
+wd:Q294833 rdfs:label "Alan"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q29520 rdfs:label "China"@en ;
+    rdfs:comment "cultural region, ancient civilization, and nation in East Asia; mostly refers to the People's Republic of China in political situation and rarely refers to the Republic of China"@en .
+
+wd:Q29613961 rdfs:label "Rogge"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q3046048 rdfs:label "NBC Sports"@en ;
+    rdfs:comment "sports division of the NBC television network"@en .
+
+wd:Q31078031 rdfs:label "Olympic Review"@en ;
+    rdfs:comment "periodical of the International Olympic Committee"@en .
+
+wd:Q317967 rdfs:label "Kostis Palamas"@en ;
+    rdfs:comment "Greek poet"@en .
+
+wd:Q3185 rdfs:label "Hildesheim"@en ;
+    rdfs:comment "city in Lower Saxony, Germany"@en .
+
+wd:Q327591 rdfs:label "independent politician"@en ;
+    rdfs:comment "individual not affiliated to any political party"@en .
+
+wd:Q334 rdfs:label "Singapore"@en ;
+    rdfs:comment "sovereign island country and city-state in maritime Southeast Asia"@en .
+
+wd:Q336132 rdfs:label "Arash Miresmaeili"@en ;
+    rdfs:comment "Iranian judoka"@en .
+
+wd:Q34217 rdfs:label "Oxford"@en ;
+    rdfs:comment "city in Oxfordshire, England"@en .
+
+wd:Q349166 rdfs:label "Ben Johnson"@en ;
+    rdfs:comment "American film actor (1918–1996)"@en .
+
+wd:Q355245 rdfs:label "Henry George"@en ;
+    rdfs:comment "American political economist and journalist (1839–1897)"@en .
+
+wd:Q36091 rdfs:label "Minneapolis"@en ;
+    rdfs:comment "city in and seat of Hennepin County, and largest city in State of Minnesota, United States"@en .
+
+wd:Q36987127 rdfs:label "Flatter"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q37215686 rdfs:label "Slocum"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q37442990 rdfs:label "Pele"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q37473005 rdfs:label "Rio"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q391028 rdfs:label "University of British Columbia"@en ;
+    rdfs:comment "public research university in British Columbia, Canada"@en .
+
+wd:Q39420 rdfs:label "Sochi"@en ;
+    rdfs:comment "city in Krasnodar Krai, Russia"@en .
+
+wd:Q39681 rdfs:label "USA Today"@en ;
+    rdfs:comment "American national daily newspaper"@en .
+
+wd:Q40 rdfs:label "Austria"@en ;
+    rdfs:comment "country in Central Europe"@en .
+
+wd:Q4005866 rdfs:label "University of Texas Press"@en ;
+    rdfs:comment "American academic publisher"@en .
+
+wd:Q40206701 rdfs:label "Schantz"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q4037189 rdfs:label "Delphi"@en ;
+    rdfs:comment "programming language (dialect of Object Pascal, used in Embarcadero Delphi)"@en .
+
+wd:Q40464 rdfs:label "Agence France-Presse"@en ;
+    rdfs:comment "international news agency headquartered in Paris"@en .
+
+wd:Q41466 rdfs:label "ice hockey"@en ;
+    rdfs:comment "team sport played on ice using sticks, skates, and a puck"@en .
+
+wd:Q4175194 rdfs:label "Charles Beck"@en ;
+    rdfs:comment "German-born American classical scholar"@en .
+
+wd:Q426463 rdfs:label "Lewis"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q43182 rdfs:label "Eratosthenes"@en ;
+    rdfs:comment "Greek mathematician, geographer, poet, astronomer, librarian and music theorist"@en .
+
+wd:Q45023080 rdfs:label "Čáslavská"@en ;
+    rdfs:comment "street in Chrudim, Czech Republic"@en .
+
+wd:Q4567409 rdfs:label "Glenn Ikonen"@en ;
+    rdfs:comment "Swedish wheelchair curler"@en .
+
+wd:Q461 rdfs:label "Internet Archive"@en ;
+    rdfs:comment "American non-profit organization"@en .
+
+wd:Q465164 rdfs:label "Nima"@en ;
+    rdfs:comment "unisex given name"@en .
+
+wd:Q467296 rdfs:label "Robina Muqimyar"@en ;
+    rdfs:comment "Olympic sprinter, Afghan politician"@en .
+
+wd:Q483915 rdfs:label "Nike"@en ;
+    rdfs:comment "American athletic equipment company"@en .
+
+wd:Q4913781 rdfs:label "Bin Laden"@en ;
+    rdfs:comment "single by Mos Def, DJ Green Lantern, Immortal Technique"@en .
+
+wd:Q5170827 rdfs:label "Cork University Press"@en ;
+    rdfs:comment "publisher"@en .
+
+wd:Q52 rdfs:label "Wikipedia"@en ;
+    rdfs:comment "free multilingual online encyclopedia"@en .
+
+wd:Q5237116 rdfs:label "David Maraniss"@en ;
+    rdfs:comment "American journalist"@en .
+
+wd:Q556883 rdfs:label "George Eyser"@en ;
+    rdfs:comment "German-born American gymnast"@en .
+
+wd:Q56243872 rdfs:label "Nelsen"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q56291953 rdfs:label "Galen"@en ;
+    rdfs:comment "male given name"@en .
+
+wd:Q57556787 rdfs:label "The UEFA Champions League: maintaining the status quo?"@en .
+
+wd:Q57636060 rdfs:label "The International Paralympic Committee as a Governing Body"@en .
+
+wd:Q598646 rdfs:label "Olympic Museum"@en ;
+    rdfs:comment "museum collection in Lausanne in the canton of Vaud, Switzerland"@en .
+
+wd:Q60156062 rdfs:label "Preuss"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q609274 rdfs:label "NYPD Blue"@en ;
+    rdfs:comment "American television police drama (1993–2005)"@en .
+
+wd:Q612 rdfs:label "Dubai"@en ;
+    rdfs:comment "most populous city in the United Arab Emirates and the capital of the Emirate of Dubai"@en .
+
+wd:Q624999 rdfs:label "Pyeongchang"@en ;
+    rdfs:comment "town in Gangwon Province, South Korea"@en .
+
+wd:Q63882630 rdfs:label "Sandomir"@en ;
+    rdfs:comment "musical character in the musical Gigi by Frederick Loewe"@en .
+
+wd:Q64212492 rdfs:label "L. Larose and L. Tenin"@en ;
+    rdfs:comment "publishing house"@en .
+
+wd:Q64864533 rdfs:label "William K. Brooks"@en ;
+    rdfs:comment "experimental physicist in high‐energy nuclear and particle physics"@en .
+
+wd:Q664 rdfs:label "New Zealand"@en ;
+    rdfs:comment "island country in the southwest Pacific Ocean"@en .
+
+wd:Q6745108 rdfs:label "Malvin Gray Johnson"@en ;
+    rdfs:comment "American artist (1896-1934)"@en .
+
+wd:Q6858746 rdfs:label "Millender"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q69457 rdfs:label "2190 Coubertin"@en ;
+    rdfs:comment "asteroid"@en .
+
+wd:Q72 rdfs:label "Zurich"@en ;
+    rdfs:comment "most populous city in Switzerland and capital of the canton of Zurich"@en .
+
+wd:Q727 rdfs:label "Amsterdam"@en ;
+    rdfs:comment "capital and most populous city of the Netherlands"@en .
+
+wd:Q73551741 rdfs:label "The British Olympic Association's position statement on athlete confidentiality"@en ;
+    rdfs:comment "scientific article published on 01 February 2000"@en .
+
+wd:Q735749 rdfs:label "Hornblower"@en ;
+    rdfs:comment "series of British television films"@en .
+
+wd:Q744182 rdfs:label "Random House"@en ;
+    rdfs:comment "American general-interest trade book publisher"@en .
+
+wd:Q749394 rdfs:label "World Anti-Doping Agency"@en ;
+    rdfs:comment "foundation created through a collective initiative led by the International Olympic Committee"@en .
+
+wd:Q76912 rdfs:label "Ludwig Guttmann"@en ;
+    rdfs:comment "German-British neurologist who created the Paralympic Games (1899-1980)"@en .
+
+wd:Q7747 rdfs:label "Vladimir Putin"@en ;
+    rdfs:comment "2nd and 4th President of Russia (2000-2008, 2012-present), 7th and 11th Prime Minister of Russia (1999-2000, 2008-2012), Director of the Federal Security Service (1998-1999) and Deputy Mayor of Saint Petersburg (1994-1996)"@en .
+
+wd:Q794 rdfs:label "Iran"@en ;
+    rdfs:comment "country in Western Asia"@en .
+
+wd:Q802704 rdfs:label "CFL Line 1"@en ;
+    rdfs:comment "railway line in Luxembourg"@en .
+
+wd:Q87760484 rdfs:label "Ayelet"@en ;
+    rdfs:comment "female given name"@en .
+
+wd:Q884 rdfs:label "South Korea"@en ;
+    rdfs:comment "country in East Asia"@en .
+
+wd:Q88460530 rdfs:label "Simone McCarthy"@en ;
+    rdfs:comment "researcher"@en .
+
+wd:Q954231 rdfs:label "Randy Edelman"@en ;
+    rdfs:comment "American musician, producer, and composer for film and television (born 1947)"@en .
+
+wd:Q96478603 rdfs:label "Rowlatt"@en ;
+    rdfs:comment "family name"@en .
+
+wd:Q9684 rdfs:label "The New York Times"@en ;
+    rdfs:comment "American daily newspaper (founded 1851)"@en .
+
+ex:AMS a ont:Organization ;
+    rdfs:label "AMS"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q727 ;
+    skos:exactMatch wd:Q727 .
+
+ex:Bulletin_du_Comité_International_Olympique a ont:Organization ;
+    rdfs:label "Bulletin du Comité International Olympique"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Congress a ont:Organization ;
+    rdfs:label "Congress"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q2495862 ;
+    skos:exactMatch wd:Q2495862 .
+
+ex:International_Federations a ont:Organization ;
+    rdfs:label "International Federations"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:International_Sports_Federations a ont:Organization ;
+    rdfs:label "International Sports Federations"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Moscow_Times a ont:Organization ;
+    rdfs:label "Moscow Times"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q1202611 ;
+    skos:exactMatch wd:Q1202611 .
+
+ex:SLOC a ont:Organization ;
+    rdfs:label "SLOC"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q37215686 ;
+    skos:exactMatch wd:Q37215686 .
+
+ex:University_of_British_Columbia a ont:Organization ;
+    rdfs:label "University of British Columbia"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q391028 ;
+    skos:exactMatch wd:Q391028 .
+
+ex:Walla_Walla_Press a ont:Organization ;
+    rdfs:label "Walla Walla Press"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:World_AntiDoping_Agency a ont:Organization ;
+    rdfs:label "World Anti-Doping Agency"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q749394 ;
+    skos:exactMatch wd:Q749394 .
+
+ex:a_Paralympic_Sport a ont:Organization ;
+    rdfs:label "a Paralympic Sport"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:the_International_Olympic_Committee a ont:Organization ;
+    rdfs:label "the International Olympic Committee"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> ;
+    owl:sameAs wd:Q40970 ;
+    skos:exactMatch wd:Q40970 .
+
+ex:AWDC a ont:Organization ;
+    rdfs:label "AWDC"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Antwerp_World_Diamond_Centre a ont:Organization ;
+    rdfs:label "Antwerp World Diamond Centre"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q17003905 ;
+    skos:exactMatch wd:Q17003905 .
+
+ex:Coubertin a ont:Organization ;
+    rdfs:label "Coubertin"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q69457 ;
+    skos:exactMatch wd:Q69457 .
+
+ex:Independent a ont:Organization ;
+    rdfs:label "Independent"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q327591 ;
+    skos:exactMatch wd:Q327591 .
+
+ex:The_International_Olympic_Committee a ont:Organization ;
+    rdfs:label "The International Olympic Committee"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q40970 ;
+    skos:exactMatch wd:Q40970 .
+
+ex:the_Olympic_Museum a ont:Organization ;
+    rdfs:label "the Olympic Museum"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> ;
+    owl:sameAs wd:Q598646 ;
+    skos:exactMatch wd:Q598646 .
+
+wd:Q40970 rdfs:label "International Olympic Committee"@en ;
+    rdfs:comment "non-governmental sports organisation (founded 1894)"@en .
+
+ex:CFL a ont:Organization ;
+    rdfs:label "CFL"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> ;
+    owl:sameAs wd:Q802704 ;
+    skos:exactMatch wd:Q802704 .
+
+ex:Millennium_Ed a ont:Organization ;
+    rdfs:label "Millennium Ed."^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> .
+
+ex:Google_Books a ont:Organization ;
+    rdfs:label "Google Books"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q206033 ;
+    skos:exactMatch wd:Q206033 .
+
+ex:M_Wiener a ont:Organization ;
+    rdfs:label "M. Wiener"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Des_Deutschen_Archäologischen_Instituts a ont:Organization ;
+    rdfs:label "Des Deutschen Archäologischen Instituts"^^xsd:string ;
+    ont:isLocalEntity true ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:comment "Local entity of type Organization, not found in external KBs."@en ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Internet_Archive a ont:Organization ;
+    rdfs:label "Internet Archive"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> ;
+    owl:sameAs wd:Q461 ;
+    skos:exactMatch wd:Q461 .
+

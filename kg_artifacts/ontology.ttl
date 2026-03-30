@@ -1,0 +1,65 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://myolympicgraph.org/ontology/locatedIn> a owl:ObjectProperty ;
+    rdfs:domain <http://myolympicgraph.org/ontology/Organization> ;
+    rdfs:range <http://myolympicgraph.org/ontology/Place> .
+
+<http://myolympicgraph.org/ontology/memberOf> a owl:ObjectProperty ;
+    rdfs:domain <http://myolympicgraph.org/ontology/Person> ;
+    rdfs:range <http://myolympicgraph.org/ontology/Organization> .
+
+<http://myolympicgraph.org/ontology/mentionedIn> a owl:ObjectProperty ;
+    rdfs:domain <http://myolympicgraph.org/ontology/Organization>,
+        <http://myolympicgraph.org/ontology/Person>,
+        <http://myolympicgraph.org/ontology/Place> .
+
+rdfs:comment a owl:ObjectProperty ;
+    rdfs:domain rdfs:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty .
+
+rdfs:domain a owl:ObjectProperty ;
+    rdfs:domain owl:ObjectProperty ;
+    rdfs:range rdfs:Class .
+
+rdfs:label a owl:ObjectProperty ;
+    rdfs:domain <http://myolympicgraph.org/ontology/Organization>,
+        <http://myolympicgraph.org/ontology/Person>,
+        <http://myolympicgraph.org/ontology/Place>,
+        owl:DatatypeProperty,
+        owl:ObjectProperty .
+
+rdfs:range a owl:ObjectProperty ;
+    rdfs:domain owl:ObjectProperty ;
+    rdfs:range rdfs:Class .
+
+rdfs:seeAlso a owl:ObjectProperty ;
+    rdfs:domain <http://myolympicgraph.org/ontology/Organization>,
+        <http://myolympicgraph.org/ontology/Person>,
+        <http://myolympicgraph.org/ontology/Place> .
+
+rdfs:subClassOf a owl:ObjectProperty ;
+    rdfs:domain rdfs:Class .
+
+owl:DatatypeProperty a owl:Class ;
+    rdfs:label "DatatypeProperty"@en .
+
+<http://myolympicgraph.org/ontology/Person> a owl:Class ;
+    rdfs:label "Person"@en .
+
+<http://myolympicgraph.org/ontology/Place> a owl:Class ;
+    rdfs:label "Place"@en .
+
+rdfs:Class a owl:Class ;
+    rdfs:label "Class"@en .
+
+<http://myolympicgraph.org/ontology/Organization> a owl:Class ;
+    rdfs:label "Organization"@en .
+
+owl:Class a owl:Class ;
+    rdfs:label "Class"@en .
+
+owl:ObjectProperty a owl:Class ;
+    rdfs:label "ObjectProperty"@en .
+

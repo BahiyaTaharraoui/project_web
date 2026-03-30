@@ -1,0 +1,1122 @@
+@prefix ex: <http://myolympicgraph.org/resource/> .
+@prefix ont: <http://myolympicgraph.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:Organization a rdfs:Class,
+        owl:Class ;
+    rdfs:comment "A committee, federation, club or institution"@en ;
+    rdfs:subClassOf owl:Thing .
+
+ont:Person a rdfs:Class,
+        owl:Class ;
+    rdfs:comment "A human being mentioned in the Olympic context"@en ;
+    rdfs:subClassOf owl:Thing .
+
+ont:Place a rdfs:Class,
+        owl:Class ;
+    rdfs:comment "A geopolitical entity: city, country or region"@en ;
+    rdfs:subClassOf owl:Thing .
+
+ont:basedIn a owl:ObjectProperty ;
+    rdfs:label "based in"@en ;
+    rdfs:comment "A person is associated with a geopolitical location"@en ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Place .
+
+ont:locatedIn a owl:ObjectProperty ;
+    rdfs:label "located in"@en ;
+    rdfs:comment "An organization is located in a place"@en ;
+    rdfs:domain ont:Organization ;
+    rdfs:range ont:Place .
+
+ont:memberOf a owl:ObjectProperty ;
+    rdfs:label "member of"@en ;
+    rdfs:comment "A person is affiliated with an organization"@en ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Organization .
+
+ont:mentionedIn a owl:DatatypeProperty ;
+    rdfs:label "mentioned in"@en ;
+    rdfs:comment "Source Wikipedia page where the entity was extracted"@en .
+
+ex:Ahn_Hyunsoo a ont:Person ;
+    rdfs:label "Ahn Hyun-soo"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Alan a ont:Person ;
+    rdfs:label "Alan"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Allison a ont:Person ;
+    rdfs:label "Allison"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Anastasiia_Kirpichnikova a ont:Person ;
+    rdfs:label "Anastasiia Kirpichnikova"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Arash_Miresmaeili a ont:Person ;
+    rdfs:label "Arash Miresmaeili"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Austria a ont:Place ;
+    rdfs:label "Austria"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Ayelet a ont:Person ;
+    rdfs:label "Ayelet"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Ben_Cocking a ont:Person ;
+    rdfs:label "Ben Cocking"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Winter_sports"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Winter_sports> .
+
+ex:Ben_Johnson a ont:Person ;
+    rdfs:label "Ben Johnson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Canada_Newswire a ont:Organization ;
+    rdfs:label "Canada Newswire"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Charalambos a ont:Person ;
+    rdfs:label "Charalambos"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:China a ont:Place ;
+    rdfs:label "China"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Claire a ont:Person ;
+    rdfs:label "Claire"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Coroebus a ont:Person ;
+    rdfs:label "Coroebus"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Cyrene a ont:Place ;
+    rdfs:label "Cyrene"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Dade a ont:Person ;
+    rdfs:label "Dade"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:David_C a ont:Person ;
+    rdfs:label "David C."^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:David_Maraniss a ont:Person ;
+    rdfs:label "David Maraniss"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Davies a ont:Person ;
+    rdfs:label "Davies"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:De_Nonno a ont:Person ;
+    rdfs:label "De Nonno"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Delphi a ont:Place ;
+    rdfs:label "Delphi"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Droit a ont:Person ;
+    rdfs:label "Droit"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Dubai a ont:Place ;
+    rdfs:label "Dubai"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Duke_Kahanamoku a ont:Person ;
+    rdfs:label "Duke Kahanamoku"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Dunbar a ont:Person ;
+    rdfs:label "Dunbar"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Early a ont:Person ;
+    rdfs:label "Early"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Elena_Votsi46 a ont:Person ;
+    rdfs:label "Elena Votsi.[46"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:England a ont:Place ;
+    rdfs:label "England"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Eratosthenes a ont:Person ;
+    rdfs:label "Eratosthenes"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Feargus a ont:Person ;
+    rdfs:label "Feargus"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Fernando_Martín_Vicente a ont:Person ;
+    rdfs:label "Fernando Martín Vicente"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Finkelstein a ont:Person ;
+    rdfs:label "Finkelstein"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Flatter a ont:Person ;
+    rdfs:label "Flatter"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> .
+
+ex:Franco a ont:Person ;
+    rdfs:label "Franco"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Frank a ont:Person ;
+    rdfs:label "Frank"^^xsd:string ;
+    ont:memberOf ex:AMS,
+        ex:International_Federations,
+        ex:International_Sports_Federations,
+        ex:Moscow_Times,
+        ex:SLOC,
+        ex:University_of_British_Columbia,
+        ex:Walla_Walla_Press,
+        ex:World_AntiDoping_Agency,
+        ex:a_Paralympic_Sport,
+        ex:the_International_Olympic_Committee ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Galen a ont:Person ;
+    rdfs:label "Galen"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:George_Eyser a ont:Person ;
+    rdfs:label "George Eyser"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Gibson a ont:Person ;
+    rdfs:label "Gibson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Glenn_Ikonen a ont:Person ;
+    rdfs:label "Glenn Ikonen"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Goggin a ont:Person ;
+    rdfs:label "Goggin"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Gray_Johnson a ont:Person ;
+    rdfs:label "Gray Johnson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Gregor_Robertson a ont:Person ;
+    rdfs:label "Gregor Robertson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:HA_Ormerod a ont:Person ;
+    rdfs:label "H.A. Ormerod"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:HW_Pleket a ont:Person ;
+    rdfs:label "H.W. Pleket"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Henry_George a ont:Person ;
+    rdfs:label "Henry George"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Hildesheim a ont:Place ;
+    rdfs:label "Hildesheim"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Hornblower a ont:Person ;
+    rdfs:label "Hornblower"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Iasius a ont:Person ;
+    rdfs:label "Iasius"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Ibolya_Csák30 a ont:Person ;
+    rdfs:label "Ibolya Csák.[30"^^xsd:string ;
+    ont:memberOf ex:Administrative_Science_Quarterly,
+        ex:Agence_FrancePresse,
+        ex:American_Review_of_Canadian_Studies,
+        ex:Charles_Beck,
+        ex:Cork_University_Press,
+        ex:Deseret_News_Archives,
+        ex:Guided_History,
+        ex:HOC,
+        ex:Harvard_University_Press,
+        ex:IPC,
+        ex:International_Paralympic_Committee,
+        ex:LOCOG,
+        ex:L_Larose,
+        ex:NBC_Sports,
+        ex:NYPD,
+        ex:Newsweek,
+        ex:Olympic_Primer,
+        ex:Pluto_Press,
+        ex:Routledge_Taylor__Francis_Group,
+        ex:Simon__Schuster,
+        ex:The_New_York_Times,
+        ex:The_San_Francisco_Chronicle,
+        ex:USA_TODAY,
+        ex:University_of_Texas_Press,
+        ex:Université_de_Paris_IV__Sorbonne,
+        ex:Vallardi__Associati,
+        ex:the_British_Olympic_Association,
+        ex:the_Institute_for_Physical_Culture,
+        ex:the_International_Federation_of_Association_Football,
+        ex:the_International_Paralympic_Committee ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Iran a ont:Place ;
+    rdfs:label "Iran"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Irena a ont:Person ;
+    rdfs:label "Irena"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Winter_sports"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Winter_sports> .
+
+ex:Jason a ont:Person ;
+    rdfs:label "Jason"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Jennings a ont:Person ;
+    rdfs:label "Jennings"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Jim_Thorpe a ont:Person ;
+    rdfs:label "Jim Thorpe"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> .
+
+ex:John_E_Findling a ont:Person ;
+    rdfs:label "John E. Findling"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Jordan a ont:Person ;
+    rdfs:label "Jordan"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Kirsty_Coventry a ont:Person ;
+    rdfs:label "Kirsty Coventry"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Kostis_Palamas a ont:Person ;
+    rdfs:label "Kostis Palamas"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Lei a ont:Person ;
+    rdfs:label "Lei"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> .
+
+ex:Leonidas a ont:Person ;
+    rdfs:label "Leonidas"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Internet_Archive ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Lewis a ont:Person ;
+    rdfs:label "Lewis"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Liam_Llewellyn a ont:Person ;
+    rdfs:label "Liam Llewellyn"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Lori a ont:Person ;
+    rdfs:label "Lori"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Ludwig_Guttmann a ont:Person ;
+    rdfs:label "Ludwig Guttmann"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:MacIntosh a ont:Person ;
+    rdfs:label "MacIntosh"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Maffly a ont:Person ;
+    rdfs:label "Maffly"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Marcell_Jacobs a ont:Person ;
+    rdfs:label "Marcell Jacobs"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> .
+
+ex:Michael_Kamen a ont:Person ;
+    rdfs:label "Michael Kamen"^^xsd:string ;
+    ont:memberOf ex:AWDC,
+        ex:Antwerp_World_Diamond_Centre,
+        ex:Coubertin,
+        ex:Independent,
+        ex:The_International_Olympic_Committee,
+        ex:the_Olympic_Museum ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Michaelis a ont:Person ;
+    rdfs:label "Michaelis"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Millender a ont:Person ;
+    rdfs:label "Millender"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Minneapolis a ont:Place ;
+    rdfs:label "Minneapolis"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Minnesota a ont:Place ;
+    rdfs:label "Minnesota"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Montgomery a ont:Person ;
+    rdfs:label "Montgomery"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> .
+
+ex:Morse a ont:Person ;
+    rdfs:label "Morse"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Much_Wenlock a ont:Place ;
+    rdfs:label "Much Wenlock"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Murray a ont:Person ;
+    rdfs:label "Murray"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Nagano a ont:Place ;
+    rdfs:label "Nagano"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Nelsen a ont:Person ;
+    rdfs:label "Nelsen"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:New_Zealand a ont:Place ;
+    rdfs:label "New Zealand"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Newell a ont:Person ;
+    rdfs:label "Newell"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Nicholas_J_Richardson a ont:Person ;
+    rdfs:label "Nicholas J. Richardson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Nick a ont:Person ;
+    rdfs:label "Nick"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Nike a ont:Person ;
+    rdfs:label "Nike"^^xsd:string ;
+    ont:memberOf ex:AWDC,
+        ex:Antwerp_World_Diamond_Centre,
+        ex:Bulletin_du_Comité_International_Olympique,
+        ex:Congress,
+        ex:Coubertin,
+        ex:Independent,
+        ex:The_International_Olympic_Committee,
+        ex:the_Olympic_Museum ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Nima a ont:Person ;
+    rdfs:label "Nima"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:OSullivan a ont:Person ;
+    rdfs:label "O'Sullivan"^^xsd:string ;
+    ont:memberOf ex:AWDC,
+        ex:Antwerp_World_Diamond_Centre,
+        ex:Bulletin_du_Comité_International_Olympique,
+        ex:Congress,
+        ex:Coubertin,
+        ex:Independent,
+        ex:The_International_Olympic_Committee,
+        ex:the_Olympic_Museum ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Olympic_Review a ont:Organization ;
+    rdfs:label "Olympic Review"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Oxford a ont:Place ;
+    rdfs:label "Oxford"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:P_David a ont:Person ;
+    rdfs:label "P. David"^^xsd:string ;
+    ont:memberOf ex:AMS,
+        ex:International_Federations,
+        ex:International_Sports_Federations,
+        ex:Moscow_Times,
+        ex:SLOC,
+        ex:University_of_British_Columbia,
+        ex:Walla_Walla_Press,
+        ex:World_AntiDoping_Agency,
+        ex:a_Paralympic_Sport,
+        ex:the_International_Olympic_Committee ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Pele a ont:Person ;
+    rdfs:label "Pele"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Pelops a ont:Person ;
+    rdfs:label "Pelops"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Perseus_Hopper a ont:Person ;
+    rdfs:label "Perseus Hopper"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Pierre_de_Coubertin8 a ont:Person ;
+    rdfs:label "Pierre de Coubertin[8"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Pisa a ont:Place ;
+    rdfs:label "Pisa"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Preuss a ont:Person ;
+    rdfs:label "Preuss"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Pyeongchang a ont:Place ;
+    rdfs:label "Pyeongchang"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Random_House a ont:Organization ;
+    rdfs:label "Random House"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Randy_Edelman a ont:Person ;
+    rdfs:label "Randy Edelman"^^xsd:string ;
+    ont:memberOf ex:AWDC,
+        ex:Antwerp_World_Diamond_Centre,
+        ex:Bulletin_du_Comité_International_Olympique,
+        ex:Congress,
+        ex:Coubertin,
+        ex:Independent,
+        ex:The_International_Olympic_Committee,
+        ex:the_Olympic_Museum ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Rebecca_Williams a ont:Person ;
+    rdfs:label "Rebecca Williams"^^xsd:string ;
+    ont:memberOf ex:AMS,
+        ex:International_Federations,
+        ex:International_Sports_Federations,
+        ex:Moscow_Times,
+        ex:SLOC,
+        ex:University_of_British_Columbia,
+        ex:Walla_Walla_Press,
+        ex:World_AntiDoping_Agency,
+        ex:a_Paralympic_Sport,
+        ex:the_International_Olympic_Committee ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Rice a ont:Person ;
+    rdfs:label "Rice"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Ricky_Williams a ont:Person ;
+    rdfs:label "Ricky Williams"^^xsd:string ;
+    ont:memberOf ex:CFL,
+        ex:Millennium_Ed ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> .
+
+ex:Riding a ont:Person ;
+    rdfs:label "Riding"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Rio a ont:Place ;
+    rdfs:label "Rio"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Robert_Dover a ont:Person ;
+    rdfs:label "Robert Dover"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Robina_Muqimyar a ont:Person ;
+    rdfs:label "Robina Muqimyar"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Roche a ont:Person ;
+    rdfs:label "Roche"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Rogge a ont:Person ;
+    rdfs:label "Rogge"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Romania a ont:Place ;
+    rdfs:label "Romania"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Rowlatt a ont:Person ;
+    rdfs:label "Rowlatt"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Salt_Lake_City a ont:Place ;
+    rdfs:label "Salt Lake City"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Sandomir a ont:Person ;
+    rdfs:label "Sandomir"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Schantz a ont:Person ;
+    rdfs:label "Schantz"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Scott a ont:Person ;
+    rdfs:label "Scott"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Simone_McCarthy a ont:Person ;
+    rdfs:label "Simone McCarthy"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Singapore a ont:Place ;
+    rdfs:label "Singapore"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Sochi a ont:Place ;
+    rdfs:label "Sochi"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:South_Korea a ont:Place ;
+    rdfs:label "South Korea"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Theodosius a ont:Person ;
+    rdfs:label "Theodosius"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Tiberius a ont:Person ;
+    rdfs:label "Tiberius"^^xsd:string ;
+    ont:memberOf ex:Des_Deutschen_Archäologischen_Instituts,
+        ex:Google_Books,
+        ex:Internet_Archive,
+        ex:M_Wiener ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Trevor a ont:Person ;
+    rdfs:label "Trevor"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Trischa_ZornHudson a ont:Person ;
+    rdfs:label "Trischa Zorn-Hudson"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Vladimir_Putin a ont:Person ;
+    rdfs:label "Vladimir Putin"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Wendy_J_Raschke a ont:Person ;
+    rdfs:label "Wendy J. Raschke"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Whannel a ont:Person ;
+    rdfs:label "Whannel"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Wikipedia a ont:Organization ;
+    rdfs:label "Wikipedia"^^xsd:string ;
+    ont:locatedIn ex:Zurich ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/World_championship"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/World_championship> .
+
+ex:William_K a ont:Person ;
+    rdfs:label "William K."^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Winnipeg a ont:Place ;
+    rdfs:label "Winnipeg"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Young a ont:Person ;
+    rdfs:label "Young"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Zemlianichenko a ont:Person ;
+    rdfs:label "Zemlianichenko"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:_Pierre_de_Coubertin a ont:Person ;
+    rdfs:label "| Pierre de Coubertin"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:bin_Laden a ont:Person ;
+    rdfs:label "bin Laden"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_International_Society_of_Olympic_Historians a ont:Organization ;
+    rdfs:label "the International Society of Olympic Historians"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_UEFA_Champions_League a ont:Organization ;
+    rdfs:label "the UEFA Champions League"^^xsd:string ;
+    ont:locatedIn ex:Zurich ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/World_championship"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/World_championship> .
+
+ex:the_United_States139140141142143 a ont:Place ;
+    rdfs:label "the United States.[139][140][141][142][143"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Čáslavská a ont:Person ;
+    rdfs:label "Čáslavská"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Administrative_Science_Quarterly a ont:Organization ;
+    rdfs:label "Administrative Science Quarterly"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Agence_FrancePresse a ont:Organization ;
+    rdfs:label "Agence France-Presse"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:American_Review_of_Canadian_Studies a ont:Organization ;
+    rdfs:label "American Review of Canadian Studies"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Charles_Beck a ont:Organization ;
+    rdfs:label "Charles Beck"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Cork_University_Press a ont:Organization ;
+    rdfs:label "Cork University Press"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Deseret_News_Archives a ont:Organization ;
+    rdfs:label "Deseret News Archives"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Guided_History a ont:Organization ;
+    rdfs:label "Guided History"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:HOC a ont:Organization ;
+    rdfs:label "HOC"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Harvard_University_Press a ont:Organization ;
+    rdfs:label "Harvard University Press"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:IPC a ont:Organization ;
+    rdfs:label "IPC"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:International_Paralympic_Committee a ont:Organization ;
+    rdfs:label "International Paralympic Committee"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:LOCOG a ont:Organization ;
+    rdfs:label "LOCOG"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:L_Larose a ont:Organization ;
+    rdfs:label "L. Larose"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:NBC_Sports a ont:Organization ;
+    rdfs:label "NBC Sports"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:NYPD a ont:Organization ;
+    rdfs:label "NYPD"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Newsweek a ont:Organization ;
+    rdfs:label "Newsweek"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Olympic_Primer a ont:Organization ;
+    rdfs:label "Olympic Primer"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Pluto_Press a ont:Organization ;
+    rdfs:label "Pluto Press"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Routledge_Taylor__Francis_Group a ont:Organization ;
+    rdfs:label "Routledge, Taylor & Francis Group"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Simon__Schuster a ont:Organization ;
+    rdfs:label "Simon & Schuster"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:The_New_York_Times a ont:Organization ;
+    rdfs:label "The New York Times"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:The_San_Francisco_Chronicle a ont:Organization ;
+    rdfs:label "The San Francisco Chronicle"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:USA_TODAY a ont:Organization ;
+    rdfs:label "USA TODAY"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:University_of_Texas_Press a ont:Organization ;
+    rdfs:label "University of Texas Press"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Université_de_Paris_IV__Sorbonne a ont:Organization ;
+    rdfs:label "Université de Paris IV – Sorbonne"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Vallardi__Associati a ont:Organization ;
+    rdfs:label "Vallardi & Associati"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_British_Olympic_Association a ont:Organization ;
+    rdfs:label "the British Olympic Association"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_Institute_for_Physical_Culture a ont:Organization ;
+    rdfs:label "the Institute for Physical Culture"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_International_Federation_of_Association_Football a ont:Organization ;
+    rdfs:label "the International Federation of Association Football"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:the_International_Paralympic_Committee a ont:Organization ;
+    rdfs:label "the International Paralympic Committee"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_Games> .
+
+ex:Zurich a ont:Place ;
+    rdfs:label "Zurich"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/World_championship"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/World_championship> .
+
+ex:AMS a ont:Organization ;
+    rdfs:label "AMS"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Bulletin_du_Comité_International_Olympique a ont:Organization ;
+    rdfs:label "Bulletin du Comité International Olympique"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Congress a ont:Organization ;
+    rdfs:label "Congress"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:International_Federations a ont:Organization ;
+    rdfs:label "International Federations"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:International_Sports_Federations a ont:Organization ;
+    rdfs:label "International Sports Federations"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Moscow_Times a ont:Organization ;
+    rdfs:label "Moscow Times"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:SLOC a ont:Organization ;
+    rdfs:label "SLOC"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:University_of_British_Columbia a ont:Organization ;
+    rdfs:label "University of British Columbia"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:Walla_Walla_Press a ont:Organization ;
+    rdfs:label "Walla Walla Press"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:World_AntiDoping_Agency a ont:Organization ;
+    rdfs:label "World Anti-Doping Agency"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:a_Paralympic_Sport a ont:Organization ;
+    rdfs:label "a Paralympic Sport"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:the_International_Olympic_Committee a ont:Organization ;
+    rdfs:label "the International Olympic Committee"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Paralympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paralympic_Games> .
+
+ex:AWDC a ont:Organization ;
+    rdfs:label "AWDC"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Antwerp_World_Diamond_Centre a ont:Organization ;
+    rdfs:label "Antwerp World Diamond Centre"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Coubertin a ont:Organization ;
+    rdfs:label "Coubertin"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:Independent a ont:Organization ;
+    rdfs:label "Independent"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:The_International_Olympic_Committee a ont:Organization ;
+    rdfs:label "The International Olympic Committee"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:the_Olympic_Museum a ont:Organization ;
+    rdfs:label "the Olympic Museum"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Olympic_symbols#Flag"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Olympic_symbols#Flag> .
+
+ex:CFL a ont:Organization ;
+    rdfs:label "CFL"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> .
+
+ex:Millennium_Ed a ont:Organization ;
+    rdfs:label "Millennium Ed."^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Athlete"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Athlete> .
+
+ex:Google_Books a ont:Organization ;
+    rdfs:label "Google Books"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:M_Wiener a ont:Organization ;
+    rdfs:label "M. Wiener"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Des_Deutschen_Archäologischen_Instituts a ont:Organization ;
+    rdfs:label "Des Deutschen Archäologischen Instituts"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+
+ex:Internet_Archive a ont:Organization ;
+    rdfs:label "Internet Archive"^^xsd:string ;
+    ont:mentionedIn "https://en.wikipedia.org/wiki/Ancient_Olympic_Games"^^xsd:anyURI ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Ancient_Olympic_Games> .
+

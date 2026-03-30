@@ -1,0 +1,190 @@
+private_entity,label,type,external_uri,wikidata_qid,wikidata_label,description,confidence,status
+http://myolympicgraph.org/resource/Ahn_Hyunsoo,Ahn Hyun-soo,Person,,Q118002,Viktor Ahn,Korean-Russian short track speed skater,0.2,local_only
+http://myolympicgraph.org/resource/Alan,Alan,Person,http://www.wikidata.org/entity/Q294833,Q294833,Alan,male given name,1.0,matched
+http://myolympicgraph.org/resource/Allison,Allison,Person,http://www.wikidata.org/entity/Q19819764,Q19819764,Allison,unisex given name,1.0,matched
+http://myolympicgraph.org/resource/Anastasiia_Kirpichnikova,Anastasiia Kirpichnikova,Person,,Q65769648,Anastasiya Kirpichnikova,Russian and French swimmer,0.2,local_only
+http://myolympicgraph.org/resource/Arash_Miresmaeili,Arash Miresmaeili,Person,http://www.wikidata.org/entity/Q336132,Q336132,Arash Miresmaeili,Iranian judoka,1.0,matched
+http://myolympicgraph.org/resource/Ayelet,Ayelet,Person,http://www.wikidata.org/entity/Q87760484,Q87760484,Ayelet,female given name,1.0,matched
+http://myolympicgraph.org/resource/Ben_Cocking,Ben Cocking,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Ben_Johnson,Ben Johnson,Person,http://www.wikidata.org/entity/Q349166,Q349166,Ben Johnson,American film actor (1918–1996),1.0,matched
+http://myolympicgraph.org/resource/Charalambos,Charalambos,Person,http://www.wikidata.org/entity/Q20030238,Q20030238,Charalambos,male given name,1.0,matched
+http://myolympicgraph.org/resource/Claire,Claire,Person,http://www.wikidata.org/entity/Q1094751,Q1094751,Claire,female given name,1.0,matched
+http://myolympicgraph.org/resource/Coroebus,Coroebus,Person,http://www.wikidata.org/entity/Q1784620,Q1784620,Coroebus,mythological son of Mygdon,1.0,matched
+http://myolympicgraph.org/resource/Dade,Dade,Person,http://www.wikidata.org/entity/Q16869380,Q16869380,Dade,family name,1.0,matched
+http://myolympicgraph.org/resource/David_C,David C.,Person,http://www.wikidata.org/entity/Q114246865,Q114246865,David C. Rahm,particle physicist at BNL,0.75,matched
+http://myolympicgraph.org/resource/David_Maraniss,David Maraniss,Person,http://www.wikidata.org/entity/Q5237116,Q5237116,David Maraniss,American journalist,1.0,matched
+http://myolympicgraph.org/resource/Davies,Davies,Person,http://www.wikidata.org/entity/Q1177810,Q1177810,Davies,family name,1.0,matched
+http://myolympicgraph.org/resource/De_Nonno,De Nonno,Person,http://www.wikidata.org/entity/Q107619948,Q107619948,De Nonno,family name,1.0,matched
+http://myolympicgraph.org/resource/Droit,Droit,Person,http://www.wikidata.org/entity/Q107429727,Q107429727,Droit,family name,1.0,matched
+http://myolympicgraph.org/resource/Duke_Kahanamoku,Duke Kahanamoku,Person,http://www.wikidata.org/entity/Q123688,Q123688,Duke Kahanamoku,"American swimmer, surfer and actor (1890-1968)",1.0,matched
+http://myolympicgraph.org/resource/Dunbar,Dunbar,Person,http://www.wikidata.org/entity/Q21452734,Q21452734,Dunbar,family name,1.0,matched
+http://myolympicgraph.org/resource/Early,Early,Person,http://www.wikidata.org/entity/Q16275607,Q16275607,Early,family name,1.0,matched
+http://myolympicgraph.org/resource/Elena_Votsi46,Elena Votsi.[46,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Eratosthenes,Eratosthenes,Person,http://www.wikidata.org/entity/Q43182,Q43182,Eratosthenes,"Greek mathematician, geographer, poet, astronomer, librarian and music theorist",1.0,matched
+http://myolympicgraph.org/resource/Feargus,Feargus,Person,http://www.wikidata.org/entity/Q21396519,Q21396519,Feargus,male given name,1.0,matched
+http://myolympicgraph.org/resource/Fernando_Martín_Vicente,Fernando Martín Vicente,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Finkelstein,Finkelstein,Person,http://www.wikidata.org/entity/Q25311288,Q25311288,Finkelstein,family name,1.0,matched
+http://myolympicgraph.org/resource/Flatter,Flatter,Person,http://www.wikidata.org/entity/Q36987127,Q36987127,Flatter,family name,1.0,matched
+http://myolympicgraph.org/resource/Franco,Franco,Person,http://www.wikidata.org/entity/Q15303969,Q15303969,Franco,male given name,1.0,matched
+http://myolympicgraph.org/resource/Frank,Frank,Person,http://www.wikidata.org/entity/Q220546,Q220546,Frank,male given name,1.0,matched
+http://myolympicgraph.org/resource/Galen,Galen,Person,http://www.wikidata.org/entity/Q56291953,Q56291953,Galen,male given name,1.0,matched
+http://myolympicgraph.org/resource/George_Eyser,George Eyser,Person,http://www.wikidata.org/entity/Q556883,Q556883,George Eyser,German-born American gymnast,1.0,matched
+http://myolympicgraph.org/resource/Gibson,Gibson,Person,http://www.wikidata.org/entity/Q2700390,Q2700390,Gibson,family name,1.0,matched
+http://myolympicgraph.org/resource/Glenn_Ikonen,Glenn Ikonen,Person,http://www.wikidata.org/entity/Q4567409,Q4567409,Glenn Ikonen,Swedish wheelchair curler,1.0,matched
+http://myolympicgraph.org/resource/Goggin,Goggin,Person,http://www.wikidata.org/entity/Q21493824,Q21493824,Goggin,family name,1.0,matched
+http://myolympicgraph.org/resource/Gray_Johnson,Gray Johnson,Person,http://www.wikidata.org/entity/Q6745108,Q6745108,Malvin Gray Johnson,American artist (1896-1934),0.75,matched
+http://myolympicgraph.org/resource/Gregor_Robertson,Gregor Robertson,Person,http://www.wikidata.org/entity/Q1391375,Q1391375,Gregor Robertson,Canadian politician,1.0,matched
+http://myolympicgraph.org/resource/HA_Ormerod,H.A. Ormerod,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/HW_Pleket,H.W. Pleket,Person,,Q1606040,Henri Willy Pleket,Dutch archaeologist,0.2,local_only
+http://myolympicgraph.org/resource/Henry_George,Henry George,Person,http://www.wikidata.org/entity/Q355245,Q355245,Henry George,American political economist and journalist (1839–1897),1.0,matched
+http://myolympicgraph.org/resource/Hornblower,Hornblower,Person,http://www.wikidata.org/entity/Q735749,Q735749,Hornblower,series of British television films,1.0,matched
+http://myolympicgraph.org/resource/Iasius,Iasius,Person,http://www.wikidata.org/entity/Q106803870,Q106803870,Iasius,one of the Dactyls (demi-gods from Mt. Ida in Crete),1.0,matched
+http://myolympicgraph.org/resource/Ibolya_Csák30,Ibolya Csák.[30,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Irena,Irena,Person,http://www.wikidata.org/entity/Q11977502,Q11977502,Irena,female given name,1.0,matched
+http://myolympicgraph.org/resource/Jason,Jason,Person,http://www.wikidata.org/entity/Q2630093,Q2630093,Jason,male given name,1.0,matched
+http://myolympicgraph.org/resource/Jennings,Jennings,Person,http://www.wikidata.org/entity/Q21488855,Q21488855,Jennings,family name,1.0,matched
+http://myolympicgraph.org/resource/Jim_Thorpe,Jim Thorpe,Person,http://www.wikidata.org/entity/Q112876002,Q112876002,Jim Thorpe,English snooker referee (1933-2010),1.0,matched
+http://myolympicgraph.org/resource/John_E_Findling,John E. Findling,Person,http://www.wikidata.org/entity/Q112391164,Q112391164,John E. Findling,,1.0,matched
+http://myolympicgraph.org/resource/Jordan,Jordan,Person,http://www.wikidata.org/entity/Q14021944,Q14021944,Jordan,unisex given name,1.0,matched
+http://myolympicgraph.org/resource/Kirsty_Coventry,Kirsty Coventry,Person,http://www.wikidata.org/entity/Q274009,Q274009,Kirsty Coventry,"Zimbabwean swimmer, politician, and sports administrator",1.0,matched
+http://myolympicgraph.org/resource/Kostis_Palamas,Kostis Palamas,Person,http://www.wikidata.org/entity/Q317967,Q317967,Kostis Palamas,Greek poet,1.0,matched
+http://myolympicgraph.org/resource/Lei,Lei,Person,http://www.wikidata.org/entity/Q2028062,Q2028062,Lei,female given name,1.0,matched
+http://myolympicgraph.org/resource/Leonidas,Leonidas,Person,http://www.wikidata.org/entity/Q20001911,Q20001911,Leonidas,male given name,1.0,matched
+http://myolympicgraph.org/resource/Lewis,Lewis,Person,http://www.wikidata.org/entity/Q426463,Q426463,Lewis,family name,1.0,matched
+http://myolympicgraph.org/resource/Liam_Llewellyn,Liam Llewellyn,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Lori,Lori,Person,http://www.wikidata.org/entity/Q1870304,Q1870304,Lori,female given name,1.0,matched
+http://myolympicgraph.org/resource/Ludwig_Guttmann,Ludwig Guttmann,Person,http://www.wikidata.org/entity/Q76912,Q76912,Ludwig Guttmann,German-British neurologist who created the Paralympic Games (1899-1980),1.0,matched
+http://myolympicgraph.org/resource/MacIntosh,MacIntosh,Person,http://www.wikidata.org/entity/Q28339766,Q28339766,MacIntosh,family name,1.0,matched
+http://myolympicgraph.org/resource/Maffly,Maffly,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Marcell_Jacobs,Marcell Jacobs,Person,http://www.wikidata.org/entity/Q25366209,Q25366209,Marcell Jacobs,Italian athlete,1.0,matched
+http://myolympicgraph.org/resource/Michael_Kamen,Michael Kamen,Person,http://www.wikidata.org/entity/Q156300,Q156300,Michael Kamen,American composer (1948–2003),1.0,matched
+http://myolympicgraph.org/resource/Michaelis,Michaelis,Person,http://www.wikidata.org/entity/Q21450401,Q21450401,Michaelis,family name,1.0,matched
+http://myolympicgraph.org/resource/Millender,Millender,Person,http://www.wikidata.org/entity/Q6858746,Q6858746,Millender,family name,1.0,matched
+http://myolympicgraph.org/resource/Montgomery,Montgomery,Person,http://www.wikidata.org/entity/Q29364,Q29364,Montgomery,"city in and county seat of Montgomery County, and capital of the State of Alabama, United States",1.0,matched
+http://myolympicgraph.org/resource/Morse,Morse,Person,http://www.wikidata.org/entity/Q13571164,Q13571164,Morse,family name,1.0,matched
+http://myolympicgraph.org/resource/Murray,Murray,Person,http://www.wikidata.org/entity/Q1308329,Q1308329,Murray,family name,1.0,matched
+http://myolympicgraph.org/resource/Nelsen,Nelsen,Person,http://www.wikidata.org/entity/Q56243872,Q56243872,Nelsen,family name,1.0,matched
+http://myolympicgraph.org/resource/Newell,Newell,Person,http://www.wikidata.org/entity/Q16878034,Q16878034,Newell,family name,1.0,matched
+http://myolympicgraph.org/resource/Nicholas_J_Richardson,Nicholas J. Richardson,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Nick,Nick,Person,http://www.wikidata.org/entity/Q13137230,Q13137230,Nick,male given name,1.0,matched
+http://myolympicgraph.org/resource/Nike,Nike,Person,http://www.wikidata.org/entity/Q483915,Q483915,Nike,American athletic equipment company,1.0,matched
+http://myolympicgraph.org/resource/Nima,Nima,Person,http://www.wikidata.org/entity/Q465164,Q465164,Nima,unisex given name,1.0,matched
+http://myolympicgraph.org/resource/OSullivan,O'Sullivan,Person,http://www.wikidata.org/entity/Q21449778,Q21449778,O'Sullivan,family name,1.0,matched
+http://myolympicgraph.org/resource/P_David,P. David,Person,http://www.wikidata.org/entity/Q102368500,Q102368500,"P. David Stotts, Jr.",Ph.D. University of Virginia 1985,0.75,matched
+http://myolympicgraph.org/resource/Pele,Pele,Person,http://www.wikidata.org/entity/Q37442990,Q37442990,Pele,family name,1.0,matched
+http://myolympicgraph.org/resource/Pelops,Pelops,Person,http://www.wikidata.org/entity/Q192485,Q192485,Pelops,"son of Tantalus in Greek mythology, king of Pisa in the Peloponnesus region",1.0,matched
+http://myolympicgraph.org/resource/Perseus_Hopper,Perseus Hopper,Person,,Q639661,Perseus Digital Library,digital library,0.2,local_only
+http://myolympicgraph.org/resource/Pierre_de_Coubertin8,Pierre de Coubertin[8,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Preuss,Preuss,Person,http://www.wikidata.org/entity/Q60156062,Q60156062,Preuss,family name,1.0,matched
+http://myolympicgraph.org/resource/Randy_Edelman,Randy Edelman,Person,http://www.wikidata.org/entity/Q954231,Q954231,Randy Edelman,"American musician, producer, and composer for film and television (born 1947)",1.0,matched
+http://myolympicgraph.org/resource/Rebecca_Williams,Rebecca Williams,Person,http://www.wikidata.org/entity/Q112563296,Q112563296,Rebecca Williams,,1.0,matched
+http://myolympicgraph.org/resource/Rice,Rice,Person,http://www.wikidata.org/entity/Q13557324,Q13557324,Rice,family name,1.0,matched
+http://myolympicgraph.org/resource/Ricky_Williams,Ricky Williams,Person,http://www.wikidata.org/entity/Q108052880,Q108052880,Ricky Williams,football player (born 1960),1.0,matched
+http://myolympicgraph.org/resource/Riding,Riding,Person,http://www.wikidata.org/entity/Q16802363,Q16802363,Riding,family name,1.0,matched
+http://myolympicgraph.org/resource/Robert_Dover,Robert Dover,Person,http://www.wikidata.org/entity/Q1689656,Q1689656,Robert Dover,equestrian,1.0,matched
+http://myolympicgraph.org/resource/Robina_Muqimyar,Robina Muqimyar,Person,http://www.wikidata.org/entity/Q467296,Q467296,Robina Muqimyar,"Olympic sprinter, Afghan politician",1.0,matched
+http://myolympicgraph.org/resource/Roche,Roche,Person,http://www.wikidata.org/entity/Q2160221,Q2160221,Roche,family name,1.0,matched
+http://myolympicgraph.org/resource/Rogge,Rogge,Person,http://www.wikidata.org/entity/Q29613961,Q29613961,Rogge,family name,1.0,matched
+http://myolympicgraph.org/resource/Rowlatt,Rowlatt,Person,http://www.wikidata.org/entity/Q96478603,Q96478603,Rowlatt,family name,1.0,matched
+http://myolympicgraph.org/resource/Sandomir,Sandomir,Person,http://www.wikidata.org/entity/Q63882630,Q63882630,Sandomir,musical character in the musical Gigi by Frederick Loewe,1.0,matched
+http://myolympicgraph.org/resource/Schantz,Schantz,Person,http://www.wikidata.org/entity/Q40206701,Q40206701,Schantz,family name,1.0,matched
+http://myolympicgraph.org/resource/Scott,Scott,Person,http://www.wikidata.org/entity/Q2260734,Q2260734,Scott,male given name,1.0,matched
+http://myolympicgraph.org/resource/Simone_McCarthy,Simone McCarthy,Person,http://www.wikidata.org/entity/Q88460530,Q88460530,Simone McCarthy,researcher,1.0,matched
+http://myolympicgraph.org/resource/Theodosius,Theodosius,Person,http://www.wikidata.org/entity/Q1174712,Q1174712,Theodosius,male given name,1.0,matched
+http://myolympicgraph.org/resource/Tiberius,Tiberius,Person,http://www.wikidata.org/entity/Q21485162,Q21485162,Tiberius,ancient Roman praenomen,1.0,matched
+http://myolympicgraph.org/resource/Trevor,Trevor,Person,http://www.wikidata.org/entity/Q19800846,Q19800846,Trevor,male given name,1.0,matched
+http://myolympicgraph.org/resource/Trischa_ZornHudson,Trischa Zorn-Hudson,Person,http://www.wikidata.org/entity/Q1757800,Q1757800,Trischa Zorn,American Paralympic swimmer,0.75,matched
+http://myolympicgraph.org/resource/Vladimir_Putin,Vladimir Putin,Person,http://www.wikidata.org/entity/Q7747,Q7747,Vladimir Putin,"2nd and 4th President of Russia (2000-2008, 2012-present), 7th and 11th Prime Minister of Russia (1999-2000, 2008-2012), Director of the Federal Security Service (1998-1999) and Deputy Mayor of Saint Petersburg (1994-1996)",1.0,matched
+http://myolympicgraph.org/resource/Wendy_J_Raschke,Wendy J. Raschke,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Whannel,Whannel,Person,http://www.wikidata.org/entity/Q105282384,Q105282384,Whannel,family name,1.0,matched
+http://myolympicgraph.org/resource/William_K,William K.,Person,http://www.wikidata.org/entity/Q64864533,Q64864533,William K. Brooks,experimental physicist in high‐energy nuclear and particle physics,0.75,matched
+http://myolympicgraph.org/resource/Young,Young,Person,http://www.wikidata.org/entity/Q12678727,Q12678727,Young,family name,1.0,matched
+http://myolympicgraph.org/resource/Zemlianichenko,Zemlianichenko,Person,,Q47454479,Zemlyanychenko,Ukrainian family name,0.0,local_only
+http://myolympicgraph.org/resource/_Pierre_de_Coubertin,| Pierre de Coubertin,Person,,,,,0.0,local_only
+http://myolympicgraph.org/resource/bin_Laden,bin Laden,Person,http://www.wikidata.org/entity/Q4913781,Q4913781,Bin Laden,"single by Mos Def, DJ Green Lantern, Immortal Technique",1.0,matched
+http://myolympicgraph.org/resource/Čáslavská,Čáslavská,Person,http://www.wikidata.org/entity/Q45023080,Q45023080,Čáslavská,"street in Chrudim, Czech Republic",1.0,matched
+http://myolympicgraph.org/resource/Austria,Austria,Place,http://www.wikidata.org/entity/Q40,Q40,Austria,country in Central Europe,1.0,matched
+http://myolympicgraph.org/resource/China,China,Place,http://www.wikidata.org/entity/Q29520,Q29520,China,"cultural region, ancient civilization, and nation in East Asia; mostly refers to the People's Republic of China in political situation and rarely refers to the Republic of China",1.0,matched
+http://myolympicgraph.org/resource/Cyrene,Cyrene,Place,http://www.wikidata.org/entity/Q107269060,Q107269060,Cyrene,genus of fishes,1.0,matched
+http://myolympicgraph.org/resource/Delphi,Delphi,Place,http://www.wikidata.org/entity/Q4037189,Q4037189,Delphi,"programming language (dialect of Object Pascal, used in Embarcadero Delphi)",1.0,matched
+http://myolympicgraph.org/resource/Dubai,Dubai,Place,http://www.wikidata.org/entity/Q612,Q612,Dubai,most populous city in the United Arab Emirates and the capital of the Emirate of Dubai,1.0,matched
+http://myolympicgraph.org/resource/England,England,Place,http://www.wikidata.org/entity/Q21,Q21,England,"country in north-west Europe, part of the United Kingdom",1.0,matched
+http://myolympicgraph.org/resource/Hildesheim,Hildesheim,Place,http://www.wikidata.org/entity/Q3185,Q3185,Hildesheim,"city in Lower Saxony, Germany",1.0,matched
+http://myolympicgraph.org/resource/Iran,Iran,Place,http://www.wikidata.org/entity/Q794,Q794,Iran,country in Western Asia,1.0,matched
+http://myolympicgraph.org/resource/Minneapolis,Minneapolis,Place,http://www.wikidata.org/entity/Q36091,Q36091,Minneapolis,"city in and seat of Hennepin County, and largest city in State of Minnesota, United States",1.0,matched
+http://myolympicgraph.org/resource/Minnesota,Minnesota,Place,http://www.wikidata.org/entity/Q1527,Q1527,Minnesota,state of the United States of America,1.0,matched
+http://myolympicgraph.org/resource/Much_Wenlock,Much Wenlock,Place,http://www.wikidata.org/entity/Q201114,Q201114,Much Wenlock,"town and civil parish in Shropshire, England",1.0,matched
+http://myolympicgraph.org/resource/Nagano,Nagano,Place,http://www.wikidata.org/entity/Q128849,Q128849,Nagano,"city in Nagano Prefecture, Japan",1.0,matched
+http://myolympicgraph.org/resource/New_Zealand,New Zealand,Place,http://www.wikidata.org/entity/Q664,Q664,New Zealand,island country in the southwest Pacific Ocean,1.0,matched
+http://myolympicgraph.org/resource/Oxford,Oxford,Place,http://www.wikidata.org/entity/Q34217,Q34217,Oxford,"city in Oxfordshire, England",1.0,matched
+http://myolympicgraph.org/resource/Pisa,Pisa,Place,http://www.wikidata.org/entity/Q13375,Q13375,Pisa,"city in Tuscany, Central Italy",1.0,matched
+http://myolympicgraph.org/resource/Pyeongchang,Pyeongchang,Place,http://www.wikidata.org/entity/Q624999,Q624999,Pyeongchang,"town in Gangwon Province, South Korea",1.0,matched
+http://myolympicgraph.org/resource/Rio,Rio,Place,http://www.wikidata.org/entity/Q37473005,Q37473005,Rio,family name,1.0,matched
+http://myolympicgraph.org/resource/Romania,Romania,Place,http://www.wikidata.org/entity/Q218,Q218,Romania,country in Southeast Europe,1.0,matched
+http://myolympicgraph.org/resource/Salt_Lake_City,Salt Lake City,Place,http://www.wikidata.org/entity/Q23337,Q23337,Salt Lake City,"city in and county seat of Salt Lake County, Utah, United States and the capital of Utah",1.0,matched
+http://myolympicgraph.org/resource/Singapore,Singapore,Place,http://www.wikidata.org/entity/Q334,Q334,Singapore,sovereign island country and city-state in maritime Southeast Asia,1.0,matched
+http://myolympicgraph.org/resource/Sochi,Sochi,Place,http://www.wikidata.org/entity/Q39420,Q39420,Sochi,"city in Krasnodar Krai, Russia",1.0,matched
+http://myolympicgraph.org/resource/South_Korea,South Korea,Place,http://www.wikidata.org/entity/Q884,Q884,South Korea,country in East Asia,1.0,matched
+http://myolympicgraph.org/resource/Winnipeg,Winnipeg,Place,http://www.wikidata.org/entity/Q2135,Q2135,Winnipeg,"capital and largest city of the province of Manitoba, Canada",1.0,matched
+http://myolympicgraph.org/resource/the_United_States139140141142143,the United States.[139][140][141][142][143,Place,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Zurich,Zurich,Place,http://www.wikidata.org/entity/Q72,Q72,Zurich,most populous city in Switzerland and capital of the canton of Zurich,1.0,matched
+http://myolympicgraph.org/resource/Canada_Newswire,Canada Newswire,Organization,,Q3117348,CNW Group,Commercial press release service,0.0,local_only
+http://myolympicgraph.org/resource/Olympic_Review,Olympic Review,Organization,http://www.wikidata.org/entity/Q31078031,Q31078031,Olympic Review,periodical of the International Olympic Committee,1.0,matched
+http://myolympicgraph.org/resource/Random_House,Random House,Organization,http://www.wikidata.org/entity/Q744182,Q744182,Random House,American general-interest trade book publisher,1.0,matched
+http://myolympicgraph.org/resource/Wikipedia,Wikipedia,Organization,http://www.wikidata.org/entity/Q52,Q52,Wikipedia,free multilingual online encyclopedia,1.0,matched
+http://myolympicgraph.org/resource/the_International_Society_of_Olympic_Historians,the International Society of Olympic Historians,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/the_UEFA_Champions_League,the UEFA Champions League,Organization,http://www.wikidata.org/entity/Q57556787,Q57556787,The UEFA Champions League: maintaining the status quo?,,0.75,matched
+http://myolympicgraph.org/resource/Administrative_Science_Quarterly,Administrative Science Quarterly,Organization,http://www.wikidata.org/entity/Q124516016,Q124516016,Administrative Science Quarterly,organization,1.0,matched
+http://myolympicgraph.org/resource/Agence_FrancePresse,Agence France-Presse,Organization,http://www.wikidata.org/entity/Q40464,Q40464,Agence France-Presse,international news agency headquartered in Paris,1.0,matched
+http://myolympicgraph.org/resource/American_Review_of_Canadian_Studies,American Review of Canadian Studies,Organization,http://www.wikidata.org/entity/Q15750863,Q15750863,American Review of Canadian Studies,journal,1.0,matched
+http://myolympicgraph.org/resource/Charles_Beck,Charles Beck,Organization,http://www.wikidata.org/entity/Q4175194,Q4175194,Charles Beck,German-born American classical scholar,1.0,matched
+http://myolympicgraph.org/resource/Cork_University_Press,Cork University Press,Organization,http://www.wikidata.org/entity/Q5170827,Q5170827,Cork University Press,publisher,1.0,matched
+http://myolympicgraph.org/resource/Deseret_News_Archives,Deseret News Archives,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Guided_History,Guided History,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/HOC,HOC,Organization,http://www.wikidata.org/entity/Q41466,Q41466,ice hockey,"team sport played on ice using sticks, skates, and a puck",0.75,matched
+http://myolympicgraph.org/resource/Harvard_University_Press,Harvard University Press,Organization,http://www.wikidata.org/entity/Q1587900,Q1587900,Harvard University Press,American university publishing house,1.0,matched
+http://myolympicgraph.org/resource/IPC,IPC,Organization,,Q175386,International Paralympic Committee,Global governing body for the Paralympic Movement,0.0,local_only
+http://myolympicgraph.org/resource/International_Paralympic_Committee,International Paralympic Committee,Organization,http://www.wikidata.org/entity/Q175386,Q175386,International Paralympic Committee,Global governing body for the Paralympic Movement,1.0,matched
+http://myolympicgraph.org/resource/LOCOG,LOCOG,Organization,http://www.wikidata.org/entity/Q110209573,Q110209573,Locoge,family name,0.75,matched
+http://myolympicgraph.org/resource/L_Larose,L. Larose,Organization,http://www.wikidata.org/entity/Q64212492,Q64212492,L. Larose and L. Tenin,publishing house,0.75,matched
+http://myolympicgraph.org/resource/NBC_Sports,NBC Sports,Organization,http://www.wikidata.org/entity/Q3046048,Q3046048,NBC Sports,sports division of the NBC television network,1.0,matched
+http://myolympicgraph.org/resource/NYPD,NYPD,Organization,http://www.wikidata.org/entity/Q609274,Q609274,NYPD Blue,American television police drama (1993–2005),0.75,matched
+http://myolympicgraph.org/resource/Newsweek,Newsweek,Organization,http://www.wikidata.org/entity/Q188413,Q188413,Newsweek,weekly magazine based in New York City,1.0,matched
+http://myolympicgraph.org/resource/Olympic_Primer,Olympic Primer,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Pluto_Press,Pluto Press,Organization,http://www.wikidata.org/entity/Q17017872,Q17017872,Pluto Press,British independent book publishing house,1.0,matched
+http://myolympicgraph.org/resource/Routledge_Taylor__Francis_Group,"Routledge, Taylor & Francis Group",Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Simon__Schuster,Simon & Schuster,Organization,http://www.wikidata.org/entity/Q1756332,Q1756332,Simon & Schuster,American publishing company,1.0,matched
+http://myolympicgraph.org/resource/The_New_York_Times,The New York Times,Organization,http://www.wikidata.org/entity/Q9684,Q9684,The New York Times,American daily newspaper (founded 1851),1.0,matched
+http://myolympicgraph.org/resource/The_San_Francisco_Chronicle,The San Francisco Chronicle,Organization,http://www.wikidata.org/entity/Q139103,Q139103,San Francisco Chronicle,newspaper serving the San Francisco Bay area,0.75,matched
+http://myolympicgraph.org/resource/USA_TODAY,USA TODAY,Organization,http://www.wikidata.org/entity/Q39681,Q39681,USA Today,American national daily newspaper,1.0,matched
+http://myolympicgraph.org/resource/University_of_Texas_Press,University of Texas Press,Organization,http://www.wikidata.org/entity/Q4005866,Q4005866,University of Texas Press,American academic publisher,1.0,matched
+http://myolympicgraph.org/resource/Université_de_Paris_IV__Sorbonne,Université de Paris IV – Sorbonne,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Vallardi__Associati,Vallardi & Associati,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/the_British_Olympic_Association,the British Olympic Association,Organization,http://www.wikidata.org/entity/Q73551741,Q73551741,The British Olympic Association's position statement on athlete confidentiality,scientific article published on 01 February 2000,0.75,matched
+http://myolympicgraph.org/resource/the_Institute_for_Physical_Culture,the Institute for Physical Culture,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/the_International_Federation_of_Association_Football,the International Federation of Association Football,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/the_International_Paralympic_Committee,the International Paralympic Committee,Organization,http://www.wikidata.org/entity/Q57636060,Q57636060,The International Paralympic Committee as a Governing Body,,0.75,matched
+http://myolympicgraph.org/resource/AMS,AMS,Organization,http://www.wikidata.org/entity/Q727,Q727,Amsterdam,capital and most populous city of the Netherlands,0.75,matched
+http://myolympicgraph.org/resource/Bulletin_du_Comité_International_Olympique,Bulletin du Comité International Olympique,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Congress,Congress,Organization,http://www.wikidata.org/entity/Q2495862,Q2495862,congress,"formal meeting of representatives of different countries, states, organizations, etc.",1.0,matched
+http://myolympicgraph.org/resource/International_Federations,International Federations,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/International_Sports_Federations,International Sports Federations,Organization,,Q11422536,international sport governing body,international organization that oversees a sport,0.233,local_only
+http://myolympicgraph.org/resource/Moscow_Times,Moscow Times,Organization,http://www.wikidata.org/entity/Q1202611,Q1202611,The Moscow Times,independent bilingual newspaper,0.75,matched
+http://myolympicgraph.org/resource/SLOC,SLOC,Organization,http://www.wikidata.org/entity/Q37215686,Q37215686,Slocum,family name,0.75,matched
+http://myolympicgraph.org/resource/University_of_British_Columbia,University of British Columbia,Organization,http://www.wikidata.org/entity/Q391028,Q391028,University of British Columbia,"public research university in British Columbia, Canada",1.0,matched
+http://myolympicgraph.org/resource/Walla_Walla_Press,Walla Walla Press,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/World_AntiDoping_Agency,World Anti-Doping Agency,Organization,http://www.wikidata.org/entity/Q749394,Q749394,World Anti-Doping Agency,foundation created through a collective initiative led by the International Olympic Committee,1.0,matched
+http://myolympicgraph.org/resource/a_Paralympic_Sport,a Paralympic Sport,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/the_International_Olympic_Committee,the International Olympic Committee,Organization,http://www.wikidata.org/entity/Q40970,Q40970,International Olympic Committee,non-governmental sports organisation (founded 1894),0.75,matched
+http://myolympicgraph.org/resource/AWDC,AWDC,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Antwerp_World_Diamond_Centre,Antwerp World Diamond Centre,Organization,http://www.wikidata.org/entity/Q17003905,Q17003905,Antwerp World Diamond Centre,Dutch corporation,1.0,matched
+http://myolympicgraph.org/resource/Coubertin,Coubertin,Organization,http://www.wikidata.org/entity/Q69457,Q69457,2190 Coubertin,asteroid,0.75,matched
+http://myolympicgraph.org/resource/Independent,Independent,Organization,http://www.wikidata.org/entity/Q327591,Q327591,independent politician,individual not affiliated to any political party,0.75,matched
+http://myolympicgraph.org/resource/The_International_Olympic_Committee,The International Olympic Committee,Organization,http://www.wikidata.org/entity/Q40970,Q40970,International Olympic Committee,non-governmental sports organisation (founded 1894),0.75,matched
+http://myolympicgraph.org/resource/the_Olympic_Museum,the Olympic Museum,Organization,http://www.wikidata.org/entity/Q598646,Q598646,Olympic Museum,"museum collection in Lausanne in the canton of Vaud, Switzerland",0.75,matched
+http://myolympicgraph.org/resource/CFL,CFL,Organization,http://www.wikidata.org/entity/Q802704,Q802704,CFL Line 1,railway line in Luxembourg,0.75,matched
+http://myolympicgraph.org/resource/Millennium_Ed,Millennium Ed.,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Google_Books,Google Books,Organization,http://www.wikidata.org/entity/Q206033,Q206033,Google Books,search engine for books by Google,1.0,matched
+http://myolympicgraph.org/resource/M_Wiener,M. Wiener,Organization,,Q47539063,Meir Wiener,"German religious education teacher, historian and publicist (1819–1880)",0.2,local_only
+http://myolympicgraph.org/resource/Des_Deutschen_Archäologischen_Instituts,Des Deutschen Archäologischen Instituts,Organization,,,,,0.0,local_only
+http://myolympicgraph.org/resource/Internet_Archive,Internet Archive,Organization,http://www.wikidata.org/entity/Q461,Q461,Internet Archive,American non-profit organization,1.0,matched

@@ -1,0 +1,47 @@
+[
+  {
+    "question": "List all persons in the knowledge graph.",
+    "baseline": "I don't have a personal knowledge graph that includes information about specific individuals. I'm an AI designed to provide general information and answer questions based on my training data, but I don't have direct access to a knowledge graph of people.\n\nHowever, if you're referring to the entities",
+    "sparql": "SELECT ?person ?label WHERE {\n  ?person a <http://myolympicgraph.org/ontology/Person> .\n  OPTIONAL { ?person <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n             FILTER(LANG(?label) = \"\" || LANG(?label) = \"en\") }\n} LIMIT 20",
+    "rag_rows": 20,
+    "repaired": false,
+    "fallback": false,
+    "error": null
+  },
+  {
+    "question": "List all organizations in the knowledge graph.",
+    "baseline": "I don't have a specific knowledge graph to draw from. I'm a text-based AI model, and I don't have direct access to external databases or knowledge graphs. However, I can provide information on various types of organizations that may be included in a general knowledge graph.\n\nIf you're referring to t",
+    "sparql": "SELECT ?org ?label WHERE {\n  ?org a <http://myolympicgraph.org/ontology/Organization> .\n  OPTIONAL { ?org <http://www.w3.org/2000/01/rdf-schema#label> ?label .\n             FILTER(LANG(?label) = \"\" || LANG(?label) = \"en\") }\n} LIMIT 20",
+    "rag_rows": 20,
+    "repaired": false,
+    "fallback": false,
+    "error": null
+  },
+  {
+    "question": "Which persons are members of an organization (memberOf relations)?",
+    "baseline": "In an organization, membership is typically defined as a person who has a specific role or affiliation with the group. The following types of individuals may be considered members of an organization:\n\n1. Employees\n2. Volunteers\n3. Partners\n4. Stakeholders\n5. Affiliates\n6. Supporters\n7. Members (e.g.",
+    "sparql": "SELECT ?s ?p ?o WHERE {\n        ?s ?p ?o .\n        } LIMIT 20",
+    "rag_rows": 20,
+    "repaired": false,
+    "fallback": true,
+    "error": null
+  },
+  {
+    "question": "Which entities received awards (wdt:P463 or wdt:P166)?",
+    "baseline": "I don't have enough information to provide a specific answer. You didn't specify which entities you're referring to, so I'm unable to provide an accurate response.\n\nIf you could provide more context or clarify what entities you are asking about, I'll do my best to help.",
+    "sparql": "SELECT ?entity ?award WHERE {\n  ?entity <http://www.wikidata.org/prop/direct/P166> ?award .\n} LIMIT 20",
+    "rag_rows": 20,
+    "repaired": false,
+    "fallback": true,
+    "error": null
+  },
+  {
+    "question": "Which organizations are mentioned on the Olympic Games Wikipedia page?",
+    "baseline": "The International Olympic Committee (IOC), National Olympic Committees (NOCs), and the Organizing Committee for the Olympic Games are mentioned on the Olympic Games Wikipedia page.",
+    "sparql": "SELECT ?org ?label WHERE {\n  ?org a <http://myolympicgraph.org/ontology/Organization> .\n  ?org <http://www.w3.org/2000/01/rdf-schema#seeAlso> ?url .\n  FILTER(CONTAINS(STR(?url), \"Olympic_Games\"))\n  OPTIONAL { ?org <http://www.w3.org/2000/01/rdf-schema#label> ?label.\n             FILTER(LANG(?label) = \"\" || LANG(?label) = \"en\") }\n} LIMIT 20",
+    "rag_rows": 20,
+    "repaired": false,
+    "fallback": false,
+    "error": null
+  }
+]

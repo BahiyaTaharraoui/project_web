@@ -1,0 +1,5 @@
+private_predicate,private_label,wikidata_pid,wikidata_uri,wikidata_label,wikidata_description,relation_type,confidence,validation
+http://myolympicgraph.org/ontology/memberOf,member of,P463,http://www.wikidata.org/prop/direct/P463,member of,"organization, club, political party, etc. of which the subject is a member",owl:equivalentProperty,1.0,manual
+http://myolympicgraph.org/ontology/basedIn,based in,P27,http://www.wikidata.org/prop/direct/P27,country of citizenship,the object is a country that recognizes the subject as its citizen,rdfs:subPropertyOf,0.8,manual
+http://myolympicgraph.org/ontology/locatedIn,located in,P131,http://www.wikidata.org/prop/direct/P131,located in the administrative territorial entity,the item is located on the territory of this administrative entity,owl:equivalentProperty,0.85,manual
+http://myolympicgraph.org/ontology/mentionedIn,mentioned in,P1343,http://www.wikidata.org/prop/direct/P1343,described by source,the subject is described by the following source,rdfs:subPropertyOf,0.75,manual

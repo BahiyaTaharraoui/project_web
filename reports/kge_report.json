@@ -1,0 +1,154 @@
+{
+  "evaluation": [
+    {
+      "model": "TransE",
+      "MRR": 0.1239,
+      "Hits@1": 0.0,
+      "Hits@3": 0.235,
+      "Hits@10": 0.35,
+      "n_eval": 200
+    },
+    {
+      "model": "DistMult",
+      "MRR": 0.0156,
+      "Hits@1": 0.005,
+      "Hits@3": 0.025,
+      "Hits@10": 0.03,
+      "n_eval": 200
+    }
+  ],
+  "kb_size_sensitivity": [
+    {
+      "model": "TransE",
+      "MRR": 0.0384,
+      "Hits@1": 0.0,
+      "Hits@3": 0.07,
+      "Hits@10": 0.1,
+      "n_eval": 100,
+      "kb_size": "20k",
+      "n_triples": 20000
+    },
+    {
+      "model": "TransE",
+      "MRR": 0.0437,
+      "Hits@1": 0.0,
+      "Hits@3": 0.06,
+      "Hits@10": 0.11,
+      "n_eval": 100,
+      "kb_size": "full",
+      "n_triples": 22288
+    }
+  ],
+  "nearest_neighbors": {
+    "s00044331n": [
+      {
+        "entity": "Q45137240",
+        "similarity": 0.2697
+      },
+      {
+        "entity": "Q355245-A0239C2E-2C11-4C00-8470-40ABAB6531D1",
+        "similarity": 0.2602
+      },
+      {
+        "entity": "Q1677090",
+        "similarity": 0.252
+      },
+      {
+        "entity": "Q188413-9F3B61F8-CD8C-4E45-9592-C66B10DE5249",
+        "similarity": 0.2512
+      },
+      {
+        "entity": "Q9892",
+        "similarity": 0.2505
+      }
+    ],
+    "s00058910n": [
+      {
+        "entity": "Q29520-161DEA26-00E2-4C6A-9686-6F5B85A0C36F",
+        "similarity": 0.3048
+      },
+      {
+        "entity": "Q631",
+        "similarity": 0.267
+      },
+      {
+        "entity": "Q1935272",
+        "similarity": 0.2591
+      },
+      {
+        "entity": "q34217-77370A89-0B39-4D02-868C-A469FB55C4EC",
+        "similarity": 0.2565
+      },
+      {
+        "entity": "Q28703227",
+        "similarity": 0.2502
+      }
+    ],
+    "s00076304n": [
+      {
+        "entity": "Q216048",
+        "similarity": 0.2972
+      },
+      {
+        "entity": "Q2254231",
+        "similarity": 0.2664
+      },
+      {
+        "entity": "Q52",
+        "similarity": 0.2649
+      },
+      {
+        "entity": "Q9684-c1eb90b2-4170-f78a-9c89-4828164f5682",
+        "similarity": 0.2552
+      },
+      {
+        "entity": "Q9684-6eebbfdb-4d75-084b-6f71-83526aef1244",
+        "similarity": 0.2504
+      }
+    ],
+    "s00119919n": [
+      {
+        "entity": "Q47967-5971EF2B-FED7-414C-8709-BD519DF77201",
+        "similarity": 0.2824
+      },
+      {
+        "entity": "Q29520-08f4454b-4232-3ede-17e8-c7af38d0d951",
+        "similarity": 0.2781
+      },
+      {
+        "entity": "Q7072749",
+        "similarity": 0.2549
+      },
+      {
+        "entity": "Q1689656-A7D1E47C-3CE6-4D9D-94C6-BEF414989116",
+        "similarity": 0.2445
+      },
+      {
+        "entity": "Q735749-5B541F0F-3DB6-4706-B751-37BCF6F35872",
+        "similarity": 0.2426
+      }
+    ],
+    "s00355235n": [
+      {
+        "entity": "Q9732311",
+        "similarity": 0.2632
+      },
+      {
+        "entity": "Q1756332-8146C73A-E882-47C1-A75D-478114C06993",
+        "similarity": 0.263
+      },
+      {
+        "entity": "Q4531835",
+        "similarity": 0.2606
+      },
+      {
+        "entity": "Oxford",
+        "similarity": 0.2597
+      },
+      {
+        "entity": "Q802704",
+        "similarity": 0.2527
+      }
+    ]
+  }
+}
